@@ -1,0 +1,46 @@
+[2025-10-18T17:32:32.572+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-18T17:32:32.624+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-18T17:32:05.405456+00:00 [queued]>
+[2025-10-18T17:32:32.638+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-18T17:32:05.405456+00:00 [queued]>
+[2025-10-18T17:32:32.639+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-18T17:32:32.662+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): clean_top_pages> on 2025-10-18 17:32:05.405456+00:00
+[2025-10-18T17:32:32.674+0000] {standard_task_runner.py:63} INFO - Started process 1519 to run task
+[2025-10-18T17:32:32.679+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'wiki_trending_pipeline', 'clean_top_pages', 'manual__2025-10-18T17:32:05.405456+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/wiki_dag/wiki_top_pages_dag.py', '--cfg-path', '/tmp/tmpjxsp0bvn']
+[2025-10-18T17:32:32.682+0000] {standard_task_runner.py:91} INFO - Job 38: Subtask clean_top_pages
+[2025-10-18T17:32:32.761+0000] {task_command.py:426} INFO - Running <TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-18T17:32:05.405456+00:00 [running]> on host 0071083d7e69
+[2025-10-18T17:32:32.942+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wiki_trending_pipeline' AIRFLOW_CTX_TASK_ID='clean_top_pages' AIRFLOW_CTX_EXECUTION_DATE='2025-10-18T17:32:05.405456+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-18T17:32:05.405456+00:00'
+[2025-10-18T17:32:32.943+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-18T17:32:33.417+0000] {logging_mixin.py:188} INFO - 📊 Processing file: top_pages_2025_10_16.csv
+[2025-10-18T17:32:33.574+0000] {logging_mixin.py:188} INFO - ✓ Bucket 'silver' exists
+[2025-10-18T17:32:33.575+0000] {logging_mixin.py:188} INFO - 🚀 Connecting to Spark cluster...
+[2025-10-18T17:32:40.489+0000] {logging_mixin.py:188} INFO - ✅ Connected to Spark cluster!
+[2025-10-18T17:32:40.491+0000] {logging_mixin.py:188} INFO -    • Application ID: app-20251018173239-0005
+[2025-10-18T17:32:40.492+0000] {logging_mixin.py:188} INFO -    • Master: spark://spark-master:7077
+[2025-10-18T17:32:40.492+0000] {logging_mixin.py:188} INFO - 📖 Reading CSV from: s3a://bronze/top_pages_2025_10_16.csv
+[2025-10-18T17:33:02.486+0000] {logging_mixin.py:188} INFO - ✓ Loaded 1000 records from Bronze bucket
+[2025-10-18T17:33:02.489+0000] {logging_mixin.py:188} INFO - 🧹 Cleaning data on Spark cluster...
+[2025-10-18T17:33:02.728+0000] {logging_mixin.py:188} INFO - 📋 Sample of cleaned data:
+[2025-10-18T17:33:04.654+0000] {logging_mixin.py:188} INFO - +-----------------------------+------+----+
+|page                         |views |rank|
++-----------------------------+------+----+
+|Category:Redirects_from_moves|607757|3   |
+|Ed_Gein                      |561426|4   |
+|Google_Chrome                |405061|5   |
+|Ace_Frehley                  |402541|6   |
+|Wikipedia:Featured_pictures  |256147|7   |
+|Diane_Keaton                 |255132|8   |
+|Pankaj_Dheer                 |206041|9   |
+|6-7_(meme)                   |190997|10  |
+|Kantara:_Chapter_1           |182466|11  |
+|D'Angelo                     |181645|12  |
++-----------------------------+------+----+
+only showing top 10 rows
+[2025-10-18T17:33:05.524+0000] {logging_mixin.py:188} INFO - ✓ Cleaned 996 records using Spark cluster
+[2025-10-18T17:33:05.525+0000] {logging_mixin.py:188} INFO - 💾 Writing CSV to: s3a://silver/cleaned_2025_10_16.csv
+[2025-10-18T17:33:08.893+0000] {logging_mixin.py:188} INFO - ✅ Successfully wrote cleaned data to Silver bucket
+[2025-10-18T17:33:08.893+0000] {logging_mixin.py:188} INFO - 🛑 Stopping Spark session...
+[2025-10-18T17:33:09.179+0000] {python.py:237} INFO - Done. Returned value was: {'input_file': 'top_pages_2025_10_16.csv', 'output_file': 'cleaned_2025_10_16.csv', 'record_count': 996}
+[2025-10-18T17:33:09.180+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-18T17:33:09.235+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=wiki_trending_pipeline, task_id=clean_top_pages, execution_date=20251018T173205, start_date=20251018T173232, end_date=20251018T173309
+[2025-10-18T17:33:09.319+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-18T17:33:09.351+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-18T17:33:09.352+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,35 @@
+[2025-10-18T17:22:46.158+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-18T17:22:46.233+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wiki_trending_pipeline.verify_pipeline manual__2025-10-18T17:21:37.207533+00:00 [queued]>
+[2025-10-18T17:22:46.251+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wiki_trending_pipeline.verify_pipeline manual__2025-10-18T17:21:37.207533+00:00 [queued]>
+[2025-10-18T17:22:46.253+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-18T17:22:46.280+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): verify_pipeline> on 2025-10-18 17:21:37.207533+00:00
+[2025-10-18T17:22:46.293+0000] {standard_task_runner.py:63} INFO - Started process 670 to run task
+[2025-10-18T17:22:46.298+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'wiki_trending_pipeline', 'verify_pipeline', 'manual__2025-10-18T17:21:37.207533+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/wiki_dag/wiki_top_pages_dag.py', '--cfg-path', '/tmp/tmpqmn73n41']
+[2025-10-18T17:22:46.302+0000] {standard_task_runner.py:91} INFO - Job 31: Subtask verify_pipeline
+[2025-10-18T17:22:46.391+0000] {task_command.py:426} INFO - Running <TaskInstance: wiki_trending_pipeline.verify_pipeline manual__2025-10-18T17:21:37.207533+00:00 [running]> on host 0071083d7e69
+[2025-10-18T17:22:46.662+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wiki_trending_pipeline' AIRFLOW_CTX_TASK_ID='verify_pipeline' AIRFLOW_CTX_EXECUTION_DATE='2025-10-18T17:21:37.207533+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-18T17:21:37.207533+00:00'
+[2025-10-18T17:22:46.664+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-18T17:22:47.310+0000] {logging_mixin.py:188} INFO - ============================================================
+[2025-10-18T17:22:47.310+0000] {logging_mixin.py:188} INFO - 📊 PIPELINE VERIFICATION
+[2025-10-18T17:22:47.311+0000] {logging_mixin.py:188} INFO - ============================================================
+[2025-10-18T17:22:47.311+0000] {logging_mixin.py:188} INFO - 
+🥉 Bronze Bucket (bronze):
+[2025-10-18T17:22:47.327+0000] {logging_mixin.py:188} INFO -   • top_pages_2025_10_17.csv (0.03 MB)
+[2025-10-18T17:22:47.327+0000] {logging_mixin.py:188} INFO -   • top_pages_2025_10_17.json (0.06 MB)
+[2025-10-18T17:22:47.327+0000] {logging_mixin.py:188} INFO - 
+🥈 Silver Bucket (silver):
+[2025-10-18T17:22:47.334+0000] {logging_mixin.py:188} INFO -   • cleaned_2025_10_17.csv/_SUCCESS (0.00 KB)
+[2025-10-18T17:22:47.335+0000] {logging_mixin.py:188} INFO -   • cleaned_2025_10_17.csv/part-00000-24894b59-c5ce-448b-a7ba-22a2582033eb-c000.csv (26.54 KB)
+[2025-10-18T17:22:47.335+0000] {logging_mixin.py:188} INFO - 
+✅ Pipeline Summary:
+[2025-10-18T17:22:47.335+0000] {logging_mixin.py:188} INFO -   • Input: top_pages_2025_10_17.csv
+[2025-10-18T17:22:47.335+0000] {logging_mixin.py:188} INFO -   • Output: cleaned_2025_10_17.csv
+[2025-10-18T17:22:47.335+0000] {logging_mixin.py:188} INFO -   • Records Processed: 996
+[2025-10-18T17:22:47.335+0000] {logging_mixin.py:188} INFO -   • Status: SUCCESS
+[2025-10-18T17:22:47.336+0000] {logging_mixin.py:188} INFO - ============================================================
+[2025-10-18T17:22:47.337+0000] {python.py:237} INFO - Done. Returned value was: Pipeline completed successfully!
+[2025-10-18T17:22:47.337+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-18T17:22:47.380+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=wiki_trending_pipeline, task_id=verify_pipeline, execution_date=20251018T172137, start_date=20251018T172246, end_date=20251018T172247
+[2025-10-18T17:22:47.433+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-18T17:22:47.482+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-18T17:22:47.484+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

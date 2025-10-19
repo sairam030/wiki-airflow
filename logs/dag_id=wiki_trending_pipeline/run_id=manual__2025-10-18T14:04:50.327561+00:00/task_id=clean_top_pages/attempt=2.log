@@ -1,0 +1,59 @@
+[2025-10-18T17:05:42.288+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-18T17:05:42.369+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-18T14:04:50.327561+00:00 [queued]>
+[2025-10-18T17:05:42.388+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-18T14:04:50.327561+00:00 [queued]>
+[2025-10-18T17:05:42.389+0000] {taskinstance.py:2303} INFO - Starting attempt 2 of 3
+[2025-10-18T17:05:42.417+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): clean_top_pages> on 2025-10-18 14:04:50.327561+00:00
+[2025-10-18T17:05:42.435+0000] {standard_task_runner.py:63} INFO - Started process 178 to run task
+[2025-10-18T17:05:42.442+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'wiki_trending_pipeline', 'clean_top_pages', 'manual__2025-10-18T14:04:50.327561+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/wiki_dag/wiki_top_pages_dag.py', '--cfg-path', '/tmp/tmp9dlbx4rm']
+[2025-10-18T17:05:42.449+0000] {standard_task_runner.py:91} INFO - Job 21: Subtask clean_top_pages
+[2025-10-18T17:05:42.580+0000] {task_command.py:426} INFO - Running <TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-18T14:04:50.327561+00:00 [running]> on host 68d884e677a4
+[2025-10-18T17:05:42.859+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wiki_trending_pipeline' AIRFLOW_CTX_TASK_ID='clean_top_pages' AIRFLOW_CTX_EXECUTION_DATE='2025-10-18T14:04:50.327561+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-18T14:04:50.327561+00:00'
+[2025-10-18T17:05:42.863+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-18T17:05:43.828+0000] {logging_mixin.py:188} INFO - 📊 Processing file: top_pages_2025_10_17.json
+[2025-10-18T17:05:44.748+0000] {logging_mixin.py:188} INFO - ✓ Bucket 'silver' exists
+[2025-10-18T17:05:44.751+0000] {logging_mixin.py:188} INFO - 🚀 Starting Spark in local mode...
+[2025-10-18T17:06:00.894+0000] {logging_mixin.py:188} INFO - 📖 Reading CSV from: s3a://bronze/top_pages_2025_10_17.json
+[2025-10-18T17:06:35.905+0000] {logging_mixin.py:188} INFO - ✓ Loaded 0 records from Bronze bucket
+[2025-10-18T17:06:35.907+0000] {logging_mixin.py:188} INFO - 🧹 Cleaning data...
+[2025-10-18T17:06:36.619+0000] {logging_mixin.py:188} INFO - 🛑 Stopping Spark session...
+[2025-10-18T17:06:36.812+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-18T17:06:36.813+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 171, in clean_top_pages
+    cleaned_df = df.filter(
+                 ^^^^^^^^^^
+  File "/opt/spark/python/pyspark/sql/dataframe.py", line 3329, in filter
+    jdf = self._jdf.filter(condition._jc)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column or function parameter with name `views` cannot be resolved. Did you mean one of the following? [`_My_Love"`, ` "views": 8628`, ` "views": 8632`, ` "views": 8647`, ` "views": 8649`].;
+'Filter ((('views > 0) AND NOT ('article = Main_Page)) AND NOT StartsWith('article, Special:))
++- Relation [{"items": [{"project": "en.wikipedia"#17, "access": "all-access"#18, "year": "2025"#19, "month": "10"#20, "day": "17"#21, "articles": [{"article": "Main_Page"#22, "views": 5733911#23, "rank": 1}#24, {"article": "Ace_Frehley"#25, "views": 872205#26, "rank": 2}#27, {"article": "Special:Search"#28, "views": 860603#29, "rank": 3}#30, {"article": "1989_Tiananmen_Square_protests_and_massacre"#31, "views": 760964#32, "rank": 4}#33, {"article": "Ed_Gein"#34, "views": 495359#35, "rank": 5}#36, {"article": "Category:Redirects_from_moves"#37, "views": 443904#38, "rank": 6}#39, {"article": "Google_Chrome"#40,... 2992 more fields] csv
+
+[2025-10-18T17:06:36.879+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=wiki_trending_pipeline, task_id=clean_top_pages, execution_date=20251018T140450, start_date=20251018T170542, end_date=20251018T170636
+[2025-10-18T17:06:36.916+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 21 for task clean_top_pages ([UNRESOLVED_COLUMN.WITH_SUGGESTION] A column or function parameter with name `views` cannot be resolved. Did you mean one of the following? [`_My_Love"`, ` "views": 8628`, ` "views": 8632`, ` "views": 8647`, ` "views": 8649`].;
+'Filter ((('views > 0) AND NOT ('article = Main_Page)) AND NOT StartsWith('article, Special:))
++- Relation [{"items": [{"project": "en.wikipedia"#17, "access": "all-access"#18, "year": "2025"#19, "month": "10"#20, "day": "17"#21, "articles": [{"article": "Main_Page"#22, "views": 5733911#23, "rank": 1}#24, {"article": "Ace_Frehley"#25, "views": 872205#26, "rank": 2}#27, {"article": "Special:Search"#28, "views": 860603#29, "rank": 3}#30, {"article": "1989_Tiananmen_Square_protests_and_massacre"#31, "views": 760964#32, "rank": 4}#33, {"article": "Ed_Gein"#34, "views": 495359#35, "rank": 5}#36, {"article": "Category:Redirects_from_moves"#37, "views": 443904#38, "rank": 6}#39, {"article": "Google_Chrome"#40,... 2992 more fields] csv
+; 178)
+[2025-10-18T17:06:36.971+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-10-18T17:06:37.021+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-18T17:06:37.026+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,464 @@
+[2025-10-18T11:06:26.917+0000] {processor.py:161} INFO - Started process (PID=632) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:06:26.918+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:06:26.920+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:06:26.920+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:06:27.020+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:06:27.042+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.134 seconds
+[2025-10-18T11:06:53.261+0000] {processor.py:161} INFO - Started process (PID=642) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:06:53.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:06:53.269+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:06:53.268+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:06:53.272+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:06:53.271+0000] {dagbag.py:329} INFO - File /opt/airflow/dags/tasks/clean_top_pages.py assumed to contain no DAGs. Skipping.
+[2025-10-18T11:06:53.273+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:06:53.310+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.069 seconds
+[2025-10-18T11:07:23.554+0000] {processor.py:161} INFO - Started process (PID=652) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:07:23.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:07:23.559+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:07:23.558+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:07:23.560+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:07:23.560+0000] {dagbag.py:329} INFO - File /opt/airflow/dags/tasks/clean_top_pages.py assumed to contain no DAGs. Skipping.
+[2025-10-18T11:07:23.561+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:07:23.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.045 seconds
+[2025-10-18T11:07:53.813+0000] {processor.py:161} INFO - Started process (PID=662) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:07:53.814+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:07:53.818+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:07:53.817+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:07:53.821+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:07:53.821+0000] {dagbag.py:329} INFO - File /opt/airflow/dags/tasks/clean_top_pages.py assumed to contain no DAGs. Skipping.
+[2025-10-18T11:07:53.821+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:07:53.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.047 seconds
+[2025-10-18T11:08:24.080+0000] {processor.py:161} INFO - Started process (PID=672) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:08:24.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:08:24.085+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:08:24.085+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:08:24.087+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:08:24.086+0000] {dagbag.py:329} INFO - File /opt/airflow/dags/tasks/clean_top_pages.py assumed to contain no DAGs. Skipping.
+[2025-10-18T11:08:24.087+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:08:24.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.035 seconds
+[2025-10-18T11:08:54.321+0000] {processor.py:161} INFO - Started process (PID=682) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:08:54.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:08:54.325+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:08:54.324+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:08:54.328+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:08:54.327+0000] {dagbag.py:329} INFO - File /opt/airflow/dags/tasks/clean_top_pages.py assumed to contain no DAGs. Skipping.
+[2025-10-18T11:08:54.328+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:08:54.364+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.054 seconds
+[2025-10-18T11:09:24.596+0000] {processor.py:161} INFO - Started process (PID=692) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:09:24.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:09:24.603+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:09:24.601+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:09:24.606+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:09:24.605+0000] {dagbag.py:329} INFO - File /opt/airflow/dags/tasks/clean_top_pages.py assumed to contain no DAGs. Skipping.
+[2025-10-18T11:09:24.607+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:09:24.640+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.057 seconds
+[2025-10-18T11:09:54.863+0000] {processor.py:161} INFO - Started process (PID=702) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:09:54.868+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:09:54.872+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:09:54.871+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:09:54.875+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:09:54.874+0000] {dagbag.py:329} INFO - File /opt/airflow/dags/tasks/clean_top_pages.py assumed to contain no DAGs. Skipping.
+[2025-10-18T11:09:54.875+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:09:54.896+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.042 seconds
+[2025-10-18T11:10:25.098+0000] {processor.py:161} INFO - Started process (PID=712) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:10:25.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:10:25.102+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:10:25.102+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:10:25.104+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:10:25.104+0000] {dagbag.py:329} INFO - File /opt/airflow/dags/tasks/clean_top_pages.py assumed to contain no DAGs. Skipping.
+[2025-10-18T11:10:25.104+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:10:25.132+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.043 seconds
+[2025-10-18T11:10:55.277+0000] {processor.py:161} INFO - Started process (PID=717) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:10:55.279+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:10:55.283+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:10:55.282+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:10:55.285+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:10:55.285+0000] {dagbag.py:329} INFO - File /opt/airflow/dags/tasks/clean_top_pages.py assumed to contain no DAGs. Skipping.
+[2025-10-18T11:10:55.286+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:10:55.315+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.049 seconds
+[2025-10-18T11:11:25.545+0000] {processor.py:161} INFO - Started process (PID=727) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:11:25.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T11:11:25.548+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:11:25.548+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:11:25.550+0000] {logging_mixin.py:188} INFO - [2025-10-18T11:11:25.550+0000] {dagbag.py:329} INFO - File /opt/airflow/dags/tasks/clean_top_pages.py assumed to contain no DAGs. Skipping.
+[2025-10-18T11:11:25.550+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T11:11:25.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.037 seconds
+[2025-10-18T17:40:53.178+0000] {processor.py:161} INFO - Started process (PID=1996) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:40:53.179+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:40:53.179+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:40:53.179+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:40:53.674+0000] {processor.py:840} INFO - DAG(s) 'wiki_trending_pipeline' retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:40:53.937+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:40:53.937+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-18T17:40:53.965+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:40:53.965+0000] {dag.py:3954} INFO - Setting next_dagrun for wiki_trending_pipeline to 2025-10-18 00:00:00+00:00, run_after=2025-10-19 00:00:00+00:00
+[2025-10-18T17:40:53.990+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.825 seconds
+[2025-10-18T17:41:24.215+0000] {processor.py:161} INFO - Started process (PID=2013) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:41:24.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:41:24.217+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:41:24.216+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:41:24.632+0000] {processor.py:840} INFO - DAG(s) 'wiki_trending_pipeline' retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:41:24.667+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:41:24.666+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-18T17:41:24.706+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:41:24.706+0000] {dag.py:3954} INFO - Setting next_dagrun for wiki_trending_pipeline to 2025-10-18 00:00:00+00:00, run_after=2025-10-19 00:00:00+00:00
+[2025-10-18T17:41:24.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.531 seconds
+[2025-10-18T17:41:54.948+0000] {processor.py:161} INFO - Started process (PID=2030) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:41:54.949+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:41:54.950+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:41:54.950+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:41:55.349+0000] {processor.py:840} INFO - DAG(s) 'wiki_trending_pipeline' retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:41:55.367+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:41:55.366+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-10-18T17:41:55.395+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:41:55.394+0000] {dag.py:3954} INFO - Setting next_dagrun for wiki_trending_pipeline to 2025-10-18 00:00:00+00:00, run_after=2025-10-19 00:00:00+00:00
+[2025-10-18T17:41:55.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.480 seconds
+[2025-10-18T17:42:25.636+0000] {processor.py:161} INFO - Started process (PID=2047) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:42:25.636+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:42:25.637+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:42:25.637+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:42:26.001+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:42:25.999+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 14, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:42:26.001+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:42:26.038+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.413 seconds
+[2025-10-18T17:42:40.177+0000] {processor.py:161} INFO - Started process (PID=2057) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:42:40.178+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:42:40.179+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:42:40.178+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:42:40.645+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:42:40.644+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 14, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:42:40.646+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:42:40.685+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.515 seconds
+[2025-10-18T17:43:11.398+0000] {processor.py:161} INFO - Started process (PID=2074) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:43:11.400+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:43:11.402+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:43:11.401+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:43:11.853+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:43:11.852+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 14, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:43:11.854+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:43:11.879+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.506 seconds
+[2025-10-18T17:43:42.105+0000] {processor.py:161} INFO - Started process (PID=2091) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:43:42.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:43:42.107+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:43:42.106+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:43:42.501+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:43:42.500+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 14, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:43:42.502+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:43:42.538+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.442 seconds
+[2025-10-18T17:44:12.796+0000] {processor.py:161} INFO - Started process (PID=2108) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:44:12.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:44:12.800+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:44:12.799+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:44:13.461+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:44:13.460+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 14, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:44:13.462+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:44:13.496+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.710 seconds
+[2025-10-18T17:44:43.730+0000] {processor.py:161} INFO - Started process (PID=2125) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:44:43.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:44:43.733+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:44:43.732+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:44:44.200+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:44:44.198+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 14, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:44:44.201+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:44:44.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.519 seconds
+[2025-10-18T17:45:14.492+0000] {processor.py:161} INFO - Started process (PID=2142) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:45:14.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:45:14.495+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:45:14.494+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:45:14.989+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:45:14.988+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 14, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:45:14.990+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:45:15.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.554 seconds
+[2025-10-18T17:45:45.280+0000] {processor.py:161} INFO - Started process (PID=2159) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:45:45.282+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:45:45.285+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:45:45.284+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:45:45.981+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:45:45.979+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 14, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:45:45.982+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:45:46.022+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.760 seconds
+[2025-10-18T17:46:16.265+0000] {processor.py:161} INFO - Started process (PID=2176) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:46:16.266+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:46:16.267+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:46:16.267+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:46:17.000+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:46:16.997+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 14, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:46:17.001+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:46:17.049+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.802 seconds
+[2025-10-18T17:46:47.596+0000] {processor.py:161} INFO - Started process (PID=2191) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:46:47.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:46:47.601+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:46:47.600+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:46:48.111+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:46:48.110+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:46:48.112+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:46:48.151+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.569 seconds
+[2025-10-18T17:47:18.388+0000] {processor.py:161} INFO - Started process (PID=2208) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:47:18.389+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:47:18.391+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:47:18.390+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:47:18.831+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:47:18.829+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from dags.tasks import clean_top_pages, fetch_top_pages
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:47:18.831+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:47:18.870+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.493 seconds
+[2025-10-18T17:47:49.108+0000] {processor.py:161} INFO - Started process (PID=2225) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:47:49.109+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:47:49.111+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:47:49.111+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:47:49.686+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:47:49.682+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/tasks/fetch_top_pages.py", line 3, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:47:49.689+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:47:49.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.663 seconds
+[2025-10-18T17:48:20.041+0000] {processor.py:161} INFO - Started process (PID=2245) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:48:20.042+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:48:20.043+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:48:20.043+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:48:20.412+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:48:20.410+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/tasks/fetch_top_pages.py", line 3, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:48:20.412+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:48:20.446+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.415 seconds
+[2025-10-18T17:48:51.323+0000] {processor.py:161} INFO - Started process (PID=2264) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:48:51.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:48:51.327+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:48:51.326+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:48:51.767+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:48:51.766+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/tasks/fetch_top_pages.py", line 3, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:48:51.768+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:48:51.813+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.503 seconds
+[2025-10-18T17:49:22.629+0000] {processor.py:161} INFO - Started process (PID=2281) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:49:22.630+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:49:22.631+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:49:22.631+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:49:23.013+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:49:23.012+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/tasks/fetch_top_pages.py", line 3, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:49:23.014+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:49:23.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.440 seconds
+[2025-10-18T17:49:53.911+0000] {processor.py:161} INFO - Started process (PID=2298) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:49:53.913+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:49:53.915+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:49:53.914+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:49:54.307+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:49:54.305+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/tasks/fetch_top_pages.py", line 3, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:49:54.307+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:49:54.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.455 seconds
+[2025-10-18T17:50:25.197+0000] {processor.py:161} INFO - Started process (PID=2315) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:50:25.199+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:50:25.200+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:50:25.199+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:50:25.580+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:50:25.578+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/tasks/fetch_top_pages.py", line 3, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:50:25.580+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:50:25.611+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.424 seconds
+[2025-10-18T17:50:56.499+0000] {processor.py:161} INFO - Started process (PID=2333) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:50:56.501+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:50:56.503+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:50:56.502+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:50:56.895+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:50:56.893+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/tasks/fetch_top_pages.py", line 3, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:50:56.895+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:50:56.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.451 seconds
+[2025-10-18T17:51:27.821+0000] {processor.py:161} INFO - Started process (PID=2350) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:51:27.823+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:51:27.824+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:51:27.824+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:51:28.220+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:51:28.219+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/tasks/fetch_top_pages.py", line 3, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:51:28.221+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:51:28.257+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.447 seconds
+[2025-10-18T17:51:59.092+0000] {processor.py:161} INFO - Started process (PID=2367) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:51:59.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:51:59.095+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:51:59.094+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:51:59.494+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:51:59.492+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/tasks/fetch_top_pages.py", line 3, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:51:59.495+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:51:59.531+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.449 seconds
+[2025-10-18T17:52:30.384+0000] {processor.py:161} INFO - Started process (PID=2377) to work on /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:52:30.386+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/tasks/clean_top_pages.py for tasks to queue
+[2025-10-18T17:52:30.388+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:52:30.387+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:52:31.018+0000] {logging_mixin.py:188} INFO - [2025-10-18T17:52:31.014+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/tasks/clean_top_pages.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tasks/clean_top_pages.py", line 4, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, MINIO_ACCESS_KEY, MINIO_ENDPOINT, MINIO_SECRET_KEY, SILVER_BUCKET, ensure_bucket_exists
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/tasks/fetch_top_pages.py", line 3, in <module>
+    from dags.wiki_dag.wiki_top_pages_dag import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ImportError: cannot import name 'BRONZE_BUCKET' from partially initialized module 'dags.wiki_dag.wiki_top_pages_dag' (most likely due to a circular import) (/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py)
+[2025-10-18T17:52:31.020+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/clean_top_pages.py
+[2025-10-18T17:52:31.074+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/tasks/clean_top_pages.py took 0.705 seconds

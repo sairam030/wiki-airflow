@@ -1,0 +1,904 @@
+[2025-10-18T08:45:07.558+0000] {processor.py:161} INFO - Started process (PID=164) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:45:07.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T08:45:07.564+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:45:07.563+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:45:07.573+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:45:07.570+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 7, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags'
+[2025-10-18T08:45:07.575+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:45:07.618+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.071 seconds
+[2025-10-18T08:45:37.789+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:45:37.790+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T08:45:37.792+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:45:37.791+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:45:37.797+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:45:37.796+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 7, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags'
+[2025-10-18T08:45:37.798+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:45:37.821+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.040 seconds
+[2025-10-18T08:46:07.979+0000] {processor.py:161} INFO - Started process (PID=174) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:46:07.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T08:46:07.982+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:46:07.981+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:46:07.987+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:46:07.986+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 7, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags'
+[2025-10-18T08:46:07.988+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:46:08.016+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.048 seconds
+[2025-10-18T08:46:38.162+0000] {processor.py:161} INFO - Started process (PID=179) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:46:38.164+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T08:46:38.167+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:46:38.167+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:46:38.171+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:46:38.170+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 7, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags'
+[2025-10-18T08:46:38.172+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:46:38.200+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.048 seconds
+[2025-10-18T08:47:08.367+0000] {processor.py:161} INFO - Started process (PID=184) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:47:08.368+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T08:47:08.372+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:47:08.371+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:47:08.379+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:47:08.377+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 7, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags'
+[2025-10-18T08:47:08.380+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:47:08.429+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.075 seconds
+[2025-10-18T08:47:38.570+0000] {processor.py:161} INFO - Started process (PID=189) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:47:38.572+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T08:47:38.576+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:47:38.575+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:47:38.584+0000] {logging_mixin.py:188} INFO - [2025-10-18T08:47:38.582+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 7, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags'
+[2025-10-18T08:47:38.585+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T08:47:38.627+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.071 seconds
+[2025-10-18T18:15:05.939+0000] {processor.py:161} INFO - Started process (PID=322) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:15:05.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:15:05.943+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:15:05.942+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:15:05.955+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:15:05.952+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:15:05.956+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:15:06.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.083 seconds
+[2025-10-18T18:15:36.231+0000] {processor.py:161} INFO - Started process (PID=339) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:15:36.233+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:15:36.235+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:15:36.234+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:15:36.242+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:15:36.241+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:15:36.243+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:15:36.284+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.063 seconds
+[2025-10-18T18:16:06.491+0000] {processor.py:161} INFO - Started process (PID=356) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:16:06.494+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:16:06.495+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:16:06.495+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:16:06.501+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:16:06.499+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:16:06.502+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:16:06.545+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.065 seconds
+[2025-10-18T18:16:36.757+0000] {processor.py:161} INFO - Started process (PID=373) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:16:36.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:16:36.759+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:16:36.759+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:16:36.764+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:16:36.762+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:16:36.764+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:16:36.792+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.041 seconds
+[2025-10-18T18:17:06.991+0000] {processor.py:161} INFO - Started process (PID=383) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:17:06.992+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:17:06.993+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:17:06.992+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:17:06.997+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:17:06.996+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:17:06.998+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:17:07.037+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.054 seconds
+[2025-10-18T18:17:37.260+0000] {processor.py:161} INFO - Started process (PID=400) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:17:37.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:17:37.261+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:17:37.261+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:17:37.266+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:17:37.265+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:17:37.267+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:17:37.293+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.047 seconds
+[2025-10-18T18:18:07.479+0000] {processor.py:161} INFO - Started process (PID=417) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:18:07.481+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:18:07.482+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:18:07.481+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:18:07.487+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:18:07.486+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 10, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:18:07.488+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:18:07.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.047 seconds
+[2025-10-18T18:18:11.535+0000] {processor.py:161} INFO - Started process (PID=422) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:18:11.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:18:11.538+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:18:11.537+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:18:11.544+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:18:11.543+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:18:11.545+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:18:11.580+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.059 seconds
+[2025-10-18T18:18:41.540+0000] {processor.py:161} INFO - Started process (PID=163) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:18:41.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:18:41.544+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:18:41.543+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:18:41.553+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:18:41.550+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:18:41.555+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:18:41.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.079 seconds
+[2025-10-18T18:20:34.459+0000] {processor.py:161} INFO - Started process (PID=163) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:20:34.460+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:20:34.462+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:20:34.462+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:20:34.469+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:20:34.467+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:20:34.470+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:20:34.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.056 seconds
+[2025-10-18T18:21:04.689+0000] {processor.py:161} INFO - Started process (PID=181) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:21:04.690+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:21:04.692+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:21:04.692+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:21:04.696+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:21:04.694+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:21:04.696+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:21:04.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.051 seconds
+[2025-10-18T18:21:35.293+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:21:35.294+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:21:35.297+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:21:35.296+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:21:35.302+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:21:35.300+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:21:35.303+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:21:35.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.057 seconds
+[2025-10-18T18:22:05.567+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:22:05.568+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:22:05.572+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:22:05.571+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:22:05.582+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:22:05.578+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:22:05.583+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:22:05.631+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.082 seconds
+[2025-10-18T18:22:35.919+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:22:35.921+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:22:35.937+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:22:35.933+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:22:35.974+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:22:35.965+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:22:35.977+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:22:36.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.209 seconds
+[2025-10-18T18:23:06.186+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:23:06.187+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:23:06.191+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:23:06.190+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:23:06.199+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:23:06.196+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:23:06.199+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:23:06.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.062 seconds
+[2025-10-18T18:23:38.075+0000] {processor.py:161} INFO - Started process (PID=163) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:23:38.076+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:23:38.078+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:23:38.078+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:23:38.084+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:23:38.081+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:23:38.085+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:23:38.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.057 seconds
+[2025-10-18T18:24:08.284+0000] {processor.py:161} INFO - Started process (PID=176) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:24:08.286+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:24:08.289+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:24:08.289+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:24:08.296+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:24:08.294+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:24:08.297+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:24:08.336+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.061 seconds
+[2025-10-18T18:24:38.481+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:24:38.482+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:24:38.485+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:24:38.483+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:24:38.491+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:24:38.489+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:24:38.492+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:24:38.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.048 seconds
+[2025-10-18T18:25:08.671+0000] {processor.py:161} INFO - Started process (PID=200) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:08.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:25:08.674+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:25:08.674+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:08.679+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:25:08.677+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:25:08.679+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:08.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.043 seconds
+[2025-10-18T18:25:38.856+0000] {processor.py:161} INFO - Started process (PID=212) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:38.857+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:25:38.861+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:25:38.860+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:38.867+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:25:38.865+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:25:38.868+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:39.344+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.497 seconds
+[2025-10-18T18:25:56.170+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:56.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:25:56.175+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:25:56.174+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:56.181+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:25:56.180+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from ..tasks.fetch_top_pages import fetch_top_pages
+ImportError: attempted relative import with no known parent package
+[2025-10-18T18:25:56.181+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:56.214+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.051 seconds
+[2025-10-18T18:25:58.201+0000] {processor.py:161} INFO - Started process (PID=222) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:58.202+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:25:58.204+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:25:58.204+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:58.210+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:25:58.208+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from ..tasks.fetch_top_pages import fetch_top_pages
+ImportError: attempted relative import with no known parent package
+[2025-10-18T18:25:58.211+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:25:58.249+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.057 seconds
+[2025-10-18T18:26:28.431+0000] {processor.py:161} INFO - Started process (PID=234) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:26:28.432+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:26:28.434+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:26:28.433+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:26:28.436+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:26:28.435+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from ..tasks.fetch_top_pages import fetch_top_pages
+ImportError: attempted relative import with no known parent package
+[2025-10-18T18:26:28.437+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:26:28.463+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.043 seconds
+[2025-10-18T18:26:43.543+0000] {processor.py:161} INFO - Started process (PID=239) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:26:43.545+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:26:43.548+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:26:43.547+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:26:43.555+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:26:43.553+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:26:43.556+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:26:43.589+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.054 seconds
+[2025-10-18T18:27:13.748+0000] {processor.py:161} INFO - Started process (PID=251) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:27:13.749+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:27:13.751+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:27:13.750+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:27:13.755+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:27:13.753+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:27:13.755+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:27:13.794+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.053 seconds
+[2025-10-18T18:27:43.930+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:27:43.932+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:27:43.934+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:27:43.934+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:27:43.939+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:27:43.937+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:27:43.939+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:27:43.982+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.060 seconds
+[2025-10-18T18:28:07.079+0000] {processor.py:161} INFO - Started process (PID=275) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:07.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:28:07.082+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:28:07.082+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:07.087+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:28:07.086+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:28:07.088+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:07.119+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.048 seconds
+[2025-10-18T18:28:08.146+0000] {processor.py:161} INFO - Started process (PID=280) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:08.147+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:28:08.150+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:28:08.149+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:08.156+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:28:08.154+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:28:08.158+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:08.200+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.063 seconds
+[2025-10-18T18:28:38.332+0000] {processor.py:161} INFO - Started process (PID=292) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:38.333+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:28:38.335+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:28:38.335+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:38.339+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:28:38.337+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:28:38.340+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:38.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.044 seconds
+[2025-10-18T18:28:49.448+0000] {processor.py:161} INFO - Started process (PID=297) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:49.449+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:28:49.450+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:28:49.450+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:49.455+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:28:49.454+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from ..tasks.fetch_top_pages import *
+ImportError: attempted relative import with no known parent package
+[2025-10-18T18:28:49.456+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:28:49.498+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.058 seconds
+[2025-10-18T18:29:19.624+0000] {processor.py:161} INFO - Started process (PID=310) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:29:19.628+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:29:19.632+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:29:19.631+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:29:19.638+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:29:19.636+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from ..tasks.fetch_top_pages import *
+ImportError: attempted relative import with no known parent package
+[2025-10-18T18:29:19.640+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:29:19.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.090 seconds
+[2025-10-18T18:29:24.708+0000] {processor.py:161} INFO - Started process (PID=315) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:29:24.709+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:29:24.712+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:29:24.712+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:29:24.720+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:29:24.718+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from dags.tasks.fetch_top_pages import *
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:29:24.720+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:29:24.764+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.064 seconds
+[2025-10-18T18:29:54.966+0000] {processor.py:161} INFO - Started process (PID=327) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:29:54.967+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:29:54.970+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:29:54.969+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:29:54.975+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:29:54.973+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from dags.tasks.fetch_top_pages import *
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:29:54.976+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:29:55.020+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.063 seconds
+[2025-10-18T18:30:25.155+0000] {processor.py:161} INFO - Started process (PID=339) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:30:25.156+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:30:25.157+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:30:25.157+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:30:25.162+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:30:25.160+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from dags.tasks.fetch_top_pages import *
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:30:25.162+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:30:25.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.053 seconds
+[2025-10-18T18:30:55.363+0000] {processor.py:161} INFO - Started process (PID=351) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:30:55.364+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:30:55.366+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:30:55.366+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:30:55.370+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:30:55.369+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from dags.tasks.fetch_top_pages import *
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:30:55.371+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:30:55.409+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.053 seconds
+[2025-10-18T18:31:25.555+0000] {processor.py:161} INFO - Started process (PID=363) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:31:25.557+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:31:25.560+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:31:25.560+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:31:25.569+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:31:25.566+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from dags.tasks.fetch_top_pages import *
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:31:25.570+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:31:25.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.068 seconds
+[2025-10-18T18:31:31.640+0000] {processor.py:161} INFO - Started process (PID=368) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:31:31.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:31:31.643+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:31:31.642+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:31:31.650+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:31:31.648+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:31:31.651+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:31:31.682+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.049 seconds
+[2025-10-18T18:31:44.772+0000] {processor.py:161} INFO - Started process (PID=373) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:31:44.773+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:31:44.774+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:31:44.774+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:31:44.780+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:31:44.778+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:31:44.780+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:31:44.820+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.057 seconds
+[2025-10-18T18:32:12.970+0000] {processor.py:161} INFO - Started process (PID=385) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:32:12.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:32:12.978+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:32:12.977+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:32:12.994+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:32:12.990+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 17, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:32:12.996+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:32:13.068+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.117 seconds
+[2025-10-18T18:32:30.092+0000] {processor.py:161} INFO - Started process (PID=397) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:32:30.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:32:30.095+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:32:30.095+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:32:30.101+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:32:30.100+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 17, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:32:30.102+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:32:30.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.050 seconds
+[2025-10-18T18:32:38.154+0000] {processor.py:161} INFO - Started process (PID=402) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:32:38.155+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:32:38.157+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:32:38.156+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:32:38.162+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:32:38.160+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 17, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:32:38.162+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:32:38.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.046 seconds
+[2025-10-18T18:33:08.383+0000] {processor.py:161} INFO - Started process (PID=414) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:33:08.384+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:33:08.386+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:33:08.386+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:33:08.390+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:33:08.389+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 17, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:33:08.390+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:33:08.428+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.056 seconds
+[2025-10-18T18:33:36.544+0000] {processor.py:161} INFO - Started process (PID=426) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:33:36.545+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:33:36.547+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:33:36.547+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:33:36.554+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:33:36.553+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 17, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:33:36.555+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:33:36.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.059 seconds
+[2025-10-18T18:33:39.639+0000] {processor.py:161} INFO - Started process (PID=431) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:33:39.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:33:39.641+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:33:39.641+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:33:39.646+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:33:39.645+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 17, in <module>
+    from dags.tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'dags.tasks'
+[2025-10-18T18:33:39.647+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:33:39.678+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.049 seconds
+[2025-10-18T18:34:07.818+0000] {processor.py:161} INFO - Started process (PID=443) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:07.820+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:34:07.823+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:34:07.822+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:08.701+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:34:08.699+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 18, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/wiki_dag/tasks/fetch_top_pages.py", line 15, in <module>
+    from config import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ModuleNotFoundError: No module named 'config'
+[2025-10-18T18:34:08.702+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:08.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.925 seconds
+[2025-10-18T18:34:17.838+0000] {processor.py:161} INFO - Started process (PID=449) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:17.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:34:17.842+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:34:17.841+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:18.406+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:34:18.405+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 18, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/wiki_dag/tasks/fetch_top_pages.py", line 15, in <module>
+    from config import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ModuleNotFoundError: No module named 'config'
+[2025-10-18T18:34:18.407+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:18.444+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.614 seconds
+[2025-10-18T18:34:20.922+0000] {processor.py:161} INFO - Started process (PID=455) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:20.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:34:20.926+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:34:20.925+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:21.321+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:34:21.317+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 18, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/wiki_dag/tasks/fetch_top_pages.py", line 15, in <module>
+    from config import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ModuleNotFoundError: No module named 'config'
+[2025-10-18T18:34:21.322+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:21.366+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.452 seconds
+[2025-10-18T18:34:51.597+0000] {processor.py:161} INFO - Started process (PID=468) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:51.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:34:51.600+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:34:51.600+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:52.041+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:34:52.039+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 18, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+  File "/opt/airflow/dags/wiki_dag/tasks/fetch_top_pages.py", line 15, in <module>
+    from config import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
+ModuleNotFoundError: No module named 'config'
+[2025-10-18T18:34:52.042+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:52.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.487 seconds
+[2025-10-18T18:34:58.142+0000] {processor.py:161} INFO - Started process (PID=474) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:58.145+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:34:58.150+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:34:58.149+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:58.162+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:34:58.160+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 18, in <module>
+    from .config import BRONZE_BUCKET, SILVER_BUCKET, create_s3_client
+ImportError: attempted relative import with no known parent package
+[2025-10-18T18:34:58.163+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:34:58.217+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.092 seconds
+[2025-10-18T18:35:06.220+0000] {processor.py:161} INFO - Started process (PID=479) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:35:06.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:35:06.225+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:35:06.224+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:35:06.232+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:35:06.230+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 18, in <module>
+    from .config import BRONZE_BUCKET, SILVER_BUCKET, create_s3_client
+ImportError: attempted relative import with no known parent package
+[2025-10-18T18:35:06.232+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:35:06.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.072 seconds
+[2025-10-18T18:35:09.333+0000] {processor.py:161} INFO - Started process (PID=484) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:35:09.333+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:35:09.335+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:35:09.335+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:35:09.340+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:35:09.338+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 18, in <module>
+    from .config import BRONZE_BUCKET, SILVER_BUCKET, create_s3_client
+ImportError: attempted relative import with no known parent package
+[2025-10-18T18:35:09.340+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:35:09.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.041 seconds
+[2025-10-18T18:35:39.534+0000] {processor.py:161} INFO - Started process (PID=496) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:35:39.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:35:39.542+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:35:39.540+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:35:39.552+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:35:39.549+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 18, in <module>
+    from .config import BRONZE_BUCKET, SILVER_BUCKET, create_s3_client
+ImportError: attempted relative import with no known parent package
+[2025-10-18T18:35:39.553+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:35:39.611+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.091 seconds
+[2025-10-18T18:36:09.723+0000] {processor.py:161} INFO - Started process (PID=508) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:36:09.724+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:36:09.727+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:36:09.727+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:36:09.734+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:36:09.731+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 18, in <module>
+    from .config import BRONZE_BUCKET, SILVER_BUCKET, create_s3_client
+ImportError: attempted relative import with no known parent package
+[2025-10-18T18:36:09.735+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:36:09.790+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.079 seconds
+[2025-10-18T18:36:24.908+0000] {processor.py:161} INFO - Started process (PID=520) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:36:24.912+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:36:24.917+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:36:24.916+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:36:26.478+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:36:26.476+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 25, in <module>
+    from tasks.clean_top_pages import clean_top_pages
+ImportError: cannot import name 'clean_top_pages' from 'tasks.clean_top_pages' (/opt/airflow/dags/wiki_dag/tasks/clean_top_pages.py)
+[2025-10-18T18:36:26.479+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:36:26.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 1.629 seconds
+[2025-10-18T18:36:43.661+0000] {processor.py:161} INFO - Started process (PID=526) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:36:43.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:36:43.664+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:36:43.664+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:36:44.621+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:36:44.617+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 25, in <module>
+    from tasks.clean_top_pages import clean_top_pages
+ImportError: cannot import name 'clean_top_pages' from 'tasks.clean_top_pages' (/opt/airflow/dags/wiki_dag/tasks/clean_top_pages.py)
+[2025-10-18T18:36:44.622+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:36:44.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 1.016 seconds
+[2025-10-18T18:37:14.845+0000] {processor.py:161} INFO - Started process (PID=539) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:37:14.846+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:37:14.847+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:37:14.847+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:37:15.669+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:37:15.667+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 25, in <module>
+    from tasks.clean_top_pages import clean_top_pages
+ImportError: cannot import name 'clean_top_pages' from 'tasks.clean_top_pages' (/opt/airflow/dags/wiki_dag/tasks/clean_top_pages.py)
+[2025-10-18T18:37:15.670+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:37:15.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.874 seconds
+[2025-10-18T18:37:45.955+0000] {processor.py:161} INFO - Started process (PID=552) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:37:45.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:37:45.958+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:37:45.958+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:37:46.688+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:37:46.687+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 25, in <module>
+    from tasks.clean_top_pages import clean_top_pages
+ImportError: cannot import name 'clean_top_pages' from 'tasks.clean_top_pages' (/opt/airflow/dags/wiki_dag/tasks/clean_top_pages.py)
+[2025-10-18T18:37:46.689+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:37:46.724+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.780 seconds
+[2025-10-18T18:37:57.078+0000] {processor.py:161} INFO - Started process (PID=558) to work on /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:37:57.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py for tasks to queue
+[2025-10-18T18:37:57.082+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:37:57.081+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:37:57.089+0000] {logging_mixin.py:188} INFO - [2025-10-18T18:37:57.088+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py", line 16, in <module>
+    from tasks.fetch_top_pages import fetch_top_pages
+ModuleNotFoundError: No module named 'tasks'
+[2025-10-18T18:37:57.089+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py
+[2025-10-18T18:37:57.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/wiki_dag/wiki_dag/wiki_top_pages_dag.py took 0.062 seconds

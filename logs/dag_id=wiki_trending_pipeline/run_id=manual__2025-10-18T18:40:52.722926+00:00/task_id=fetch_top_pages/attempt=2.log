@@ -1,0 +1,59 @@
+[2025-10-18T18:45:59.185+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-18T18:45:59.274+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wiki_trending_pipeline.fetch_top_pages manual__2025-10-18T18:40:52.722926+00:00 [queued]>
+[2025-10-18T18:45:59.296+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wiki_trending_pipeline.fetch_top_pages manual__2025-10-18T18:40:52.722926+00:00 [queued]>
+[2025-10-18T18:45:59.297+0000] {taskinstance.py:2303} INFO - Starting attempt 2 of 3
+[2025-10-18T18:45:59.329+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): fetch_top_pages> on 2025-10-18 18:40:52.722926+00:00
+[2025-10-18T18:45:59.348+0000] {standard_task_runner.py:63} INFO - Started process 403 to run task
+[2025-10-18T18:45:59.360+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'wiki_trending_pipeline', 'fetch_top_pages', 'manual__2025-10-18T18:40:52.722926+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/wiki_dag/wiki_top_pages_dag.py', '--cfg-path', '/tmp/tmp7egw8x23']
+[2025-10-18T18:45:59.364+0000] {standard_task_runner.py:91} INFO - Job 5: Subtask fetch_top_pages
+[2025-10-18T18:45:59.488+0000] {task_command.py:426} INFO - Running <TaskInstance: wiki_trending_pipeline.fetch_top_pages manual__2025-10-18T18:40:52.722926+00:00 [running]> on host 994b5d9a43a8
+[2025-10-18T18:45:59.692+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wiki_trending_pipeline' AIRFLOW_CTX_TASK_ID='fetch_top_pages' AIRFLOW_CTX_EXECUTION_DATE='2025-10-18T18:40:52.722926+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-18T18:40:52.722926+00:00'
+[2025-10-18T18:45:59.694+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-18T18:45:59.750+0000] {logging_mixin.py:188} INFO - 📥 Fetching Wikipedia data for 2025/10/17
+[2025-10-18T18:46:00.244+0000] {logging_mixin.py:188} INFO - ✓ Fetched 1 items from API
+[2025-10-18T18:46:00.276+0000] {logging_mixin.py:188} INFO - ✓ Converted to DataFrame with 1000 records
+[2025-10-18T18:46:09.708+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-18T18:46:09.743+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/wiki_dag/config.py", line 31, in ensure_bucket_exists
+    s3_client.head_bucket(Bucket=bucket_name)
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 553, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 1009, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (404) when calling the HeadBucket operation: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/wiki_dag/tasks/fetch_top_pages.py", line 49, in fetch_top_pages
+    ensure_bucket_exists(BRONZE_BUCKET)
+  File "/opt/airflow/dags/wiki_dag/config.py", line 34, in ensure_bucket_exists
+    s3_client.create_bucket(Bucket=bucket_name)
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 553, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 1009, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.BucketAlreadyOwnedByYou: An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+[2025-10-18T18:46:10.885+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=wiki_trending_pipeline, task_id=fetch_top_pages, execution_date=20251018T184052, start_date=20251018T184559, end_date=20251018T184610
+[2025-10-18T18:46:12.837+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 5 for task fetch_top_pages (An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.; 403)
+[2025-10-18T18:46:13.930+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-10-18T18:46:14.061+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-18T18:46:14.065+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

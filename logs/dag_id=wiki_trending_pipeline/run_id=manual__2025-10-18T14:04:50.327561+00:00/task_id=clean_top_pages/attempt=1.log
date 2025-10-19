@@ -1,0 +1,109 @@
+[2025-10-18T14:04:55.286+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-18T14:04:55.398+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-18T14:04:50.327561+00:00 [queued]>
+[2025-10-18T14:04:55.419+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-18T14:04:50.327561+00:00 [queued]>
+[2025-10-18T14:04:55.419+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-18T14:04:55.451+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): clean_top_pages> on 2025-10-18 14:04:50.327561+00:00
+[2025-10-18T14:04:55.473+0000] {standard_task_runner.py:63} INFO - Started process 191 to run task
+[2025-10-18T14:04:55.482+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'wiki_trending_pipeline', 'clean_top_pages', 'manual__2025-10-18T14:04:50.327561+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/wiki_dag/wiki_top_pages_dag.py', '--cfg-path', '/tmp/tmpfmi066xa']
+[2025-10-18T14:04:55.486+0000] {standard_task_runner.py:91} INFO - Job 18: Subtask clean_top_pages
+[2025-10-18T14:04:55.627+0000] {task_command.py:426} INFO - Running <TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-18T14:04:50.327561+00:00 [running]> on host 2e1e6784598a
+[2025-10-18T14:04:55.869+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wiki_trending_pipeline' AIRFLOW_CTX_TASK_ID='clean_top_pages' AIRFLOW_CTX_EXECUTION_DATE='2025-10-18T14:04:50.327561+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-18T14:04:50.327561+00:00'
+[2025-10-18T14:04:55.871+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-18T14:04:56.520+0000] {logging_mixin.py:188} INFO - 📊 Processing file: top_pages_2025_10_17.json
+[2025-10-18T14:04:56.710+0000] {logging_mixin.py:188} INFO - ✓ Bucket 'silver' exists
+[2025-10-18T14:06:04.886+0000] {logging_mixin.py:188} INFO - 📖 Reading from: s3a://bronze/top_pages_2025_10_17.json
+[2025-10-18T14:06:05.582+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-18T14:06:05.584+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 227, in clean_top_pages
+    df = spark.read.json(input_path)
+         ^^^^^^^^^^
+  File "/opt/spark/python/pyspark/sql/session.py", line 1706, in read
+    return DataFrameReader(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/pyspark/sql/readwriter.py", line 70, in __init__
+    self._jreader = spark._jsparkSession.read()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o49.read.
+: java.lang.IllegalStateException: LiveListenerBus is stopped.
+	at org.apache.spark.scheduler.LiveListenerBus.addToQueue(LiveListenerBus.scala:92)
+	at org.apache.spark.scheduler.LiveListenerBus.addToStatusQueue(LiveListenerBus.scala:75)
+	at org.apache.spark.sql.internal.SharedState.<init>(SharedState.scala:115)
+	at org.apache.spark.sql.SparkSession.$anonfun$sharedState$1(SparkSession.scala:143)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.SparkSession.sharedState$lzycompute(SparkSession.scala:143)
+	at org.apache.spark.sql.SparkSession.sharedState(SparkSession.scala:142)
+	at org.apache.spark.sql.SparkSession.$anonfun$sessionState$2(SparkSession.scala:162)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.SparkSession.sessionState$lzycompute(SparkSession.scala:160)
+	at org.apache.spark.sql.SparkSession.sessionState(SparkSession.scala:157)
+	at org.apache.spark.sql.DataFrameReader.<init>(DataFrameReader.scala:699)
+	at org.apache.spark.sql.SparkSession.read(SparkSession.scala:783)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[2025-10-18T14:06:05.620+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=wiki_trending_pipeline, task_id=clean_top_pages, execution_date=20251018T140450, start_date=20251018T140455, end_date=20251018T140605
+[2025-10-18T14:06:05.645+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 18 for task clean_top_pages (An error occurred while calling o49.read.
+: java.lang.IllegalStateException: LiveListenerBus is stopped.
+	at org.apache.spark.scheduler.LiveListenerBus.addToQueue(LiveListenerBus.scala:92)
+	at org.apache.spark.scheduler.LiveListenerBus.addToStatusQueue(LiveListenerBus.scala:75)
+	at org.apache.spark.sql.internal.SharedState.<init>(SharedState.scala:115)
+	at org.apache.spark.sql.SparkSession.$anonfun$sharedState$1(SparkSession.scala:143)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.SparkSession.sharedState$lzycompute(SparkSession.scala:143)
+	at org.apache.spark.sql.SparkSession.sharedState(SparkSession.scala:142)
+	at org.apache.spark.sql.SparkSession.$anonfun$sessionState$2(SparkSession.scala:162)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.SparkSession.sessionState$lzycompute(SparkSession.scala:160)
+	at org.apache.spark.sql.SparkSession.sessionState(SparkSession.scala:157)
+	at org.apache.spark.sql.DataFrameReader.<init>(DataFrameReader.scala:699)
+	at org.apache.spark.sql.SparkSession.read(SparkSession.scala:783)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+; 191)
+[2025-10-18T14:06:05.681+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-10-18T14:06:05.716+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-18T14:06:05.718+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,98 @@
+[2025-10-18T13:34:33.251+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-18T13:34:33.302+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages scheduled__2025-10-17T00:00:00+00:00 [queued]>
+[2025-10-18T13:34:33.316+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages scheduled__2025-10-17T00:00:00+00:00 [queued]>
+[2025-10-18T13:34:33.316+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-18T13:34:33.333+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): clean_top_pages> on 2025-10-17 00:00:00+00:00
+[2025-10-18T13:34:33.345+0000] {standard_task_runner.py:63} INFO - Started process 405 to run task
+[2025-10-18T13:34:33.350+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'wiki_trending_pipeline', 'clean_top_pages', 'scheduled__2025-10-17T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/wiki_dag/wiki_top_pages_dag.py', '--cfg-path', '/tmp/tmpqr9ayqy5']
+[2025-10-18T13:34:33.352+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask clean_top_pages
+[2025-10-18T13:34:33.435+0000] {task_command.py:426} INFO - Running <TaskInstance: wiki_trending_pipeline.clean_top_pages scheduled__2025-10-17T00:00:00+00:00 [running]> on host 43c98df84003
+[2025-10-18T13:34:33.584+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wiki_trending_pipeline' AIRFLOW_CTX_TASK_ID='clean_top_pages' AIRFLOW_CTX_EXECUTION_DATE='2025-10-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-17T00:00:00+00:00'
+[2025-10-18T13:34:33.585+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-18T13:34:34.118+0000] {logging_mixin.py:188} INFO - 📊 Processing file: top_pages_2025_10_17.json
+[2025-10-18T13:34:34.317+0000] {logging_mixin.py:188} INFO - ✓ Created bucket 'silver'
+[2025-10-18T13:35:01.096+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-18T13:35:01.097+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/wiki_dag/wiki_top_pages_dag.py", line 173, in clean_top_pages
+    .getOrCreate()
+     ^^^^^^^^^^^^^
+  File "/opt/spark/python/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/opt/spark/python/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/opt/spark/python/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2025-10-18T13:35:01.124+0000] {taskinstance.py:1205} INFO - Marking task as UP_FOR_RETRY. dag_id=wiki_trending_pipeline, task_id=clean_top_pages, execution_date=20251017T000000, start_date=20251018T133433, end_date=20251018T133501
+[2025-10-18T13:35:01.151+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 4 for task clean_top_pages ([JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.; 405)
+[2025-10-18T13:35:01.208+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-10-18T13:35:01.252+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-18T13:35:01.254+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-18T18:54:03.572+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-18T18:54:03.628+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages scheduled__2025-10-17T00:00:00+00:00 [queued]>
+[2025-10-18T18:54:03.652+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages scheduled__2025-10-17T00:00:00+00:00 [queued]>
+[2025-10-18T18:54:03.653+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-18T18:54:03.672+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): clean_top_pages> on 2025-10-17 00:00:00+00:00
+[2025-10-18T18:54:03.685+0000] {standard_task_runner.py:63} INFO - Started process 356 to run task
+[2025-10-18T18:54:03.691+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'wiki_trending_pipeline', 'clean_top_pages', 'scheduled__2025-10-17T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/wiki_dag/wiki_top_pages_dag.py', '--cfg-path', '/tmp/tmp4ovdrxkg']
+[2025-10-18T18:54:03.694+0000] {standard_task_runner.py:91} INFO - Job 5: Subtask clean_top_pages
+[2025-10-18T18:54:03.780+0000] {task_command.py:426} INFO - Running <TaskInstance: wiki_trending_pipeline.clean_top_pages scheduled__2025-10-17T00:00:00+00:00 [running]> on host 96f4bad2117e
+[2025-10-18T18:54:03.923+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='wiki_trending_pipeline' AIRFLOW_CTX_TASK_ID='clean_top_pages' AIRFLOW_CTX_EXECUTION_DATE='2025-10-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-17T00:00:00+00:00'
+[2025-10-18T18:54:03.924+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-18T18:54:03.967+0000] {logging_mixin.py:188} INFO - 📊 Processing file: top_pages_2025_10_17.csv
+[2025-10-18T18:54:04.432+0000] {logging_mixin.py:188} INFO - ✓ Created bucket 'silver'
+[2025-10-18T18:54:04.433+0000] {logging_mixin.py:188} INFO - 🚀 Connecting to Spark cluster...
+[2025-10-18T18:54:10.961+0000] {logging_mixin.py:188} INFO - ✅ Connected to Spark cluster!
+[2025-10-18T18:54:10.967+0000] {logging_mixin.py:188} INFO -    • Application ID: app-20251018185409-0001
+[2025-10-18T18:54:10.968+0000] {logging_mixin.py:188} INFO -    • Master: spark://spark-master:7077
+[2025-10-18T18:54:10.969+0000] {logging_mixin.py:188} INFO - 📖 Reading CSV from: s3a://bronze/top_pages_2025_10_17.csv
+[2025-10-18T18:54:32.547+0000] {logging_mixin.py:188} INFO - ✓ Loaded 1000 records from Bronze bucket
+[2025-10-18T18:54:32.548+0000] {logging_mixin.py:188} INFO - 🧹 Cleaning data on Spark cluster...
+[2025-10-18T18:54:32.660+0000] {logging_mixin.py:188} INFO - 📋 Sample of cleaned data:
+[2025-10-18T18:54:33.568+0000] {logging_mixin.py:188} INFO - +-------------------------------------------+------+----+
+|page                                       |views |rank|
++-------------------------------------------+------+----+
+|Ace_Frehley                                |872205|2   |
+|1989_Tiananmen_Square_protests_and_massacre|760964|4   |
+|Ed_Gein                                    |495359|5   |
+|Category:Redirects_from_moves              |443904|6   |
+|Google_Chrome                              |391709|7   |
+|Joe_Flacco                                 |387478|8   |
+|Wikipedia:Featured_pictures                |257709|9   |
+|Kiss_(band)                                |227325|10  |
+|Max_Scherzer                               |225139|11  |
+|6-7_(meme)                                 |187069|12  |
++-------------------------------------------+------+----+
+only showing top 10 rows
+[2025-10-18T18:54:33.971+0000] {logging_mixin.py:188} INFO - ✓ Cleaned 996 records using Spark cluster
+[2025-10-18T18:54:33.972+0000] {logging_mixin.py:188} INFO - 💾 Writing CSV to: s3a://silver/cleaned_2025_10_17.csv
+[2025-10-18T18:54:37.144+0000] {logging_mixin.py:188} INFO - ✅ Successfully wrote cleaned data to Silver bucket
+[2025-10-18T18:54:37.144+0000] {logging_mixin.py:188} INFO - 🛑 Stopping Spark session...
+[2025-10-18T18:54:37.587+0000] {python.py:237} INFO - Done. Returned value was: {'input_file': 'top_pages_2025_10_17.csv', 'output_file': 'cleaned_2025_10_17.csv', 'record_count': 996}
+[2025-10-18T18:54:37.587+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-18T18:54:37.650+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=wiki_trending_pipeline, task_id=clean_top_pages, execution_date=20251017T000000, start_date=20251018T185403, end_date=20251018T185437
+[2025-10-18T18:54:37.745+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-18T18:54:37.781+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-10-18T18:54:37.783+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

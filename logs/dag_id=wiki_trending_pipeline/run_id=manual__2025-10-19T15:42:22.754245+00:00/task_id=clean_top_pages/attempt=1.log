@@ -1,0 +1,46 @@
+[2025-10-19T15:42:40.329+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-19T15:42:40.380+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-19T15:42:22.754245+00:00 [queued]>
+[2025-10-19T15:42:40.390+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-19T15:42:22.754245+00:00 [queued]>
+[2025-10-19T15:42:40.390+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-10-19T15:42:40.404+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): clean_top_pages> on 2025-10-19 15:42:22.754245+00:00
+[2025-10-19T15:42:40.415+0000] {standard_task_runner.py:63} INFO - Started process 2008 to run task
+[2025-10-19T15:42:40.420+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'wiki_trending_pipeline', 'clean_top_pages', 'manual__2025-10-19T15:42:22.754245+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/wiki_top_pages_dag.py', '--cfg-path', '/tmp/tmpfis3b47g']
+[2025-10-19T15:42:40.423+0000] {standard_task_runner.py:91} INFO - Job 74: Subtask clean_top_pages
+[2025-10-19T15:42:40.505+0000] {task_command.py:426} INFO - Running <TaskInstance: wiki_trending_pipeline.clean_top_pages manual__2025-10-19T15:42:22.754245+00:00 [running]> on host 6045c73eb554
+[2025-10-19T15:42:40.640+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='wiki_trending_pipeline' AIRFLOW_CTX_TASK_ID='clean_top_pages' AIRFLOW_CTX_EXECUTION_DATE='2025-10-19T15:42:22.754245+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-19T15:42:22.754245+00:00'
+[2025-10-19T15:42:40.640+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-19T15:42:40.680+0000] {logging_mixin.py:188} INFO - 📊 Processing file: top_pages_2025_10_18.csv
+[2025-10-19T15:42:41.183+0000] {logging_mixin.py:188} INFO - ✓ Bucket 'silver' exists
+[2025-10-19T15:42:41.184+0000] {logging_mixin.py:188} INFO - 🚀 Connecting to Spark cluster...
+[2025-10-19T15:42:47.616+0000] {logging_mixin.py:188} INFO - ✅ Connected to Spark cluster!
+[2025-10-19T15:42:47.621+0000] {logging_mixin.py:188} INFO -    • Application ID: app-20251019154246-0005
+[2025-10-19T15:42:47.623+0000] {logging_mixin.py:188} INFO -    • Master: spark://spark-master:7077
+[2025-10-19T15:42:47.624+0000] {logging_mixin.py:188} INFO - 📖 Reading CSV from: s3a://bronze/top_pages_2025_10_18.csv
+[2025-10-19T15:43:15.926+0000] {logging_mixin.py:188} INFO - ✓ Loaded 1000 records from Bronze bucket
+[2025-10-19T15:43:15.928+0000] {logging_mixin.py:188} INFO - 🧹 Cleaning data on Spark cluster...
+[2025-10-19T15:43:16.056+0000] {logging_mixin.py:188} INFO - 📋 Sample of cleaned data:
+[2025-10-19T15:43:17.471+0000] {logging_mixin.py:188} INFO - +-------------------------------------------+------+----+-------------------------------------------------------------------------+
+|page                                       |views |rank|link                                                                     |
++-------------------------------------------+------+----+-------------------------------------------------------------------------+
+|1989_Tiananmen_Square_protests_and_massacre|816889|3   |https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre|
+|Ed_Gein                                    |537592|4   |https://en.wikipedia.org/wiki/Ed_Gein                                    |
+|Google_Chrome                              |359664|5   |https://en.wikipedia.org/wiki/Google_Chrome                              |
+|Shohei_Ohtani                              |331536|6   |https://en.wikipedia.org/wiki/Shohei_Ohtani                              |
+|George_Santos                              |247810|7   |https://en.wikipedia.org/wiki/George_Santos                              |
+|Wikipedia:Featured_pictures                |247043|8   |https://en.wikipedia.org/wiki/Wikipedia:Featured_pictures                |
+|6-7_(meme)                                 |242943|9   |https://en.wikipedia.org/wiki/6-7_(meme)                                 |
+|Ace_Frehley                                |176362|10  |https://en.wikipedia.org/wiki/Ace_Frehley                                |
+|Killing_of_Ajike_Owens                     |173068|11  |https://en.wikipedia.org/wiki/Killing_of_Ajike_Owens                     |
+|No_Kings_protests                          |164543|12  |https://en.wikipedia.org/wiki/No_Kings_protests                          |
++-------------------------------------------+------+----+-------------------------------------------------------------------------+
+only showing top 10 rows
+[2025-10-19T15:43:18.456+0000] {logging_mixin.py:188} INFO - ✓ Cleaned 996 records using Spark cluster
+[2025-10-19T15:43:18.457+0000] {logging_mixin.py:188} INFO - 💾 Writing CSV to: s3a://silver/cleaned_2025_10_18.csv
+[2025-10-19T15:43:22.105+0000] {logging_mixin.py:188} INFO - ✅ Successfully wrote cleaned data to Silver bucket
+[2025-10-19T15:43:22.107+0000] {logging_mixin.py:188} INFO - 🛑 Stopping Spark session...
+[2025-10-19T15:43:22.588+0000] {python.py:237} INFO - Done. Returned value was: {'input_file': 'top_pages_2025_10_18.csv', 'output_file': 'cleaned_2025_10_18.csv', 'record_count': 996}
+[2025-10-19T15:43:22.589+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-19T15:43:22.669+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=wiki_trending_pipeline, task_id=clean_top_pages, execution_date=20251019T154222, start_date=20251019T154240, end_date=20251019T154322
+[2025-10-19T15:43:22.760+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-10-19T15:43:22.824+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-10-19T15:43:22.826+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
