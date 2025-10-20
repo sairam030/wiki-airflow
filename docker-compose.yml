@@ -10,6 +10,9 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth'
+    AIRFLOW__WEBSERVER__SESSION_BACKEND: "securecookie"   # ✅ ADD THIS LINE
+    AIRFLOW__WEBSERVER__RBAC: "True"
+    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "True"
     SPARK_HOME: /opt/spark
     JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
     SPARK_MASTER_URL: spark://spark-master:7077
@@ -81,7 +84,12 @@ services:
     networks:
       - airflow-net
     restart: unless-stopped
-    # CPU-only mode (works on any system)
+    runtime: nvidia
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+    command: ["serve"]
+
+
 
   spark-master:
     build: .
@@ -221,6 +229,24 @@ services:
         condition: service_completed_successfully
       spark-master:
         condition: service_started
+
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase
+    ports:
+      - "3000:3000"
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: airflow
+      MB_DB_PORT: 5432
+      MB_DB_USER: airflow
+      MB_DB_PASS: airflow
+      MB_DB_HOST: postgres
+    depends_on:
+      - postgres
+    networks:
+      - airflow-net
+    restart: unless-stopped
 
 volumes:
   postgres-data:

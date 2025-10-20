@@ -60,26 +60,33 @@ def categorize_pages(**context):
     print(f"✓ Loaded {len(df)} pages")
     print("🤖 Classifying with Ollama...")
     
-    # Classify each page
     categories = []
     geography_data = []
-    
+
     for idx, page in enumerate(df['page'].tolist(), 1):
-        # Use correct function name with _with_llm suffix
         category = classify_page_with_llm(page)
         categories.append(category)
         
-        # Use correct function name with _with_llm suffix
         geo = extract_geography_with_llm(page)
         geography_data.append(geo)
         
-        if idx % 10 == 0:
-            print(f"   Processed {idx}/{len(df)}...")
-    
-    # Add to dataframe
+        if idx % 10 == 0 or idx == len(df):
+            print(f"Processed {idx}/{len(df)} pages")
+            # Preview last 10 rows
+            preview_df = pd.DataFrame({
+                "page": df['page'][:idx],
+                "category": categories,
+                "location_type": [g['location_type'] if g else None for g in geography_data],
+                "location": [g['location'] if g else None for g in geography_data]
+            })
+            print(preview_df.tail(10))
+
+    # Assign after processing
     df['category'] = categories
     df['location_type'] = [g['location_type'] if g else None for g in geography_data]
     df['location'] = [g['location'] if g else None for g in geography_data]
+
+
     
     # Stats
     cat_stats = get_category_stats(categories)

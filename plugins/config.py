@@ -19,7 +19,7 @@ GOLD_BUCKET = "gold"
 
 # Ollama Configuration - NOW POINTS TO DOCKER CONTAINER
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://ollama:11434")  # ← CHANGED
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:1b")
 
 
 def create_s3_client():

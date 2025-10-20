@@ -4,10 +4,12 @@ Bronze -> Silver -> Gold architecture
 """
 
 from datetime import datetime, timedelta
+from pydoc import doc
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 # Import from plugins (NO "plugins." prefix in imports!)
+from utils.load_postgres import load_gold_to_postgres
 from utils.fetch_top_pages import fetch_top_pages
 from utils.clean_top_pages import check_spark_cluster, clean_pages
 from utils.categorize_pages import check_ollama, categorize_pages
@@ -70,15 +72,85 @@ with DAG(
     tags=['wikipedia', 'spark', 'ml'],
 ) as dag:
 
-    fetch = PythonOperator(task_id='fetch_top_pages', python_callable=fetch_top_pages)
-    check_spark = PythonOperator(task_id='check_spark_cluster', python_callable=check_spark_cluster)
-    clean = PythonOperator(task_id='clean_top_pages', python_callable=clean_pages)
-    check_llm = PythonOperator(task_id='check_ollama', python_callable=check_ollama)
-    categorize = PythonOperator(task_id='categorize_pages', python_callable=categorize_pages)
-    verify = PythonOperator(task_id='verify_pipeline', python_callable=verify_pipeline)
+    # task 1 fetch from wiki api
+    fetch = PythonOperator(
+        task_id='fetch_top_pages',
+        python_callable=fetch_top_pages,
+        doc_md="""
+        ### Fetch Top Wikipedia Pages
+        - Fetches top trending Wikipedia pages
+        - Stores raw data in MinIO Bronze bucket
+        """
+    )
+
+    #task 2 check spark cluster
+    check_spark = PythonOperator(
+        task_id='check_spark_cluster',
+        python_callable=check_spark_cluster,
+        doc_md="""
+        ### Check Spark Cluster
+        - Verifies if the Spark cluster is up and running
+        """
+    )
+
+    # task 3 clean top pages
+    clean = PythonOperator(
+        task_id='clean_top_pages',
+        python_callable=clean_pages,
+        doc_md="""
+        ### Clean Top Pages
+        - Cleans and preprocesses the fetched Wikipedia pages
+        - Stores cleaned data in MinIO Silver bucket
+        """
+    )
+
+    # task 4 check ollama llm
+    check_llm = PythonOperator(
+        task_id='check_ollama',
+        python_callable=check_ollama,
+        doc_md="""
+        ### Check Ollama LLM
+        - Verifies if the Ollama LLM is up and running
+        """
+    )
+
+    # task 5 categorize pages with llm
+    categorize = PythonOperator(
+        task_id='categorize_pages',
+        python_callable=categorize_pages,
+        doc_md="""
+        ### Categorize Pages
+        - Categorizes the cleaned Wikipedia pages using the Ollama LLM
+        - Stores categorized data in MinIO Gold bucket
+        """
+    )
+
+    
+    # task 5 verify pipeline
+    verify = PythonOperator(
+        task_id='verify_pipeline',
+        python_callable=verify_pipeline,
+        doc_md="""
+        ### Verify Pipeline
+        - Verifies the completion and integrity of the entire pipeline
+        """
+    )
+
+    # task 6 load gold data to postgres 
+    load_gold_task = PythonOperator(
+    task_id='load_gold_to_postgres',
+    python_callable=load_gold_to_postgres,
+    doc_md="""
+    ### Load Gold Data to Postgres
+    - Reads enriched Gold CSV from MinIO
+    - Loads into Postgres for BI & Metabase
+    """
+    )
+
 
 
 
     fetch >>  clean >> categorize >> verify
     check_spark >> clean
     check_llm >> categorize
+    load_gold_task << categorize

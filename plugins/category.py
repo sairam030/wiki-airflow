@@ -1,16 +1,17 @@
 """
-Category definitions and classification logic using Local LLM on HOST machine
+Category definitions and classification logic using Ollama in Docker
 """
-
 import requests
 import json
 import re
+import time
 
-# Ollama API endpoint (running on host machine)
-OLLAMA_HOST = "http://ollama:11434"  # ← Points to Ollama container
-# If running Airflow outside Docker, use: http://localhost:11434
+# Ollama API endpoint (Docker container)
+OLLAMA_HOST = "http://ollama:11434"
 
-# Predefined categories
+MODEL_NAME = "llama3.2:3b"
+
+# All 19 categories
 CATEGORIES = [
     "Autos and vehicles",
     "Beauty and fashion",
@@ -34,123 +35,95 @@ CATEGORIES = [
 ]
 
 # System prompts
-CATEGORY_SYSTEM_PROMPT = """You are a classification expert. Given a Wikipedia page title, classify it into ONE of these categories:
+CATEGORY_SYSTEM_PROMPT = """
+You are an expert in Wikipedia page classification. Classify the Wikipedia page title into ONE category.
 
-Categories:
-- Autos and vehicles
-- Beauty and fashion
-- Business and finance
-- Climate
-- Entertainment
-- Food and drink
-- Games
-- Health
-- Hobbies and leisure
-- Jobs and education
-- Law and government
-- Pets and animals
-- Politics
-- Science
-- Shopping
-- Sports
-- Technology
-- Travel and transportation
-- Other
+Categories: Autos and vehicles, Beauty and fashion, Business and finance, Climate, Entertainment, Food and drink, Games, Health, Hobbies and leisure, Jobs and education, Law and government, Pets and animals, Politics, Science, Shopping, Sports, Technology, Travel and transportation, Other
 
 Rules:
-1. Return ONLY the category name, nothing else
-2. Choose the MOST relevant category
-3. If unsure, choose "Other"
-4. Be concise and accurate
-
-Example:
-Input: "2024 Summer Olympics"
-Output: Sports
-
-Input: "Tesla Model 3"
-Output: Autos and vehicles"""
-
-GEOGRAPHY_SYSTEM_PROMPT = """You are a geography extraction expert. Given a Wikipedia page title, extract geographical information.
-
-Return a JSON object with:
-{
-  "has_location": true/false,
-  "location_type": "Country" | "City" | "State" | "Region" | null,
-  "location_name": "name of location" | null
-}
+1. Return ONLY the category name.
+2. For people (celebrities, politicians, scientists), classify based on their profession (e.g., singer → Entertainment, politician → Politics, football player → Sports).
+3. For movies, books, TV shows, classify them under Entertainment.
+4. If unsure, return "Other".
 
 Examples:
-Input: "2024 Paris Summer Olympics"
-Output: {"has_location": true, "location_type": "City", "location_name": "Paris"}
+"2024 Olympics" → Sports
+"iPhone 15" → Technology
+"Taylor Swift" → Entertainment
+"Barack Obama" → Politics
+"The Godfather" → Entertainment
+"""
 
-Input: "California wildfires"
-Output: {"has_location": true, "location_type": "State", "location_name": "California"}
 
-Input: "Artificial intelligence"
-Output: {"has_location": false, "location_type": null, "location_name": null}
+GEOGRAPHY_SYSTEM_PROMPT = """
+Extract the geographical location associated with this Wikipedia page title.
 
 Rules:
-1. Return ONLY valid JSON
-2. Extract the most specific location
-3. Common locations: USA, UK, China, India, New York, London, California, Texas, Europe, Asia"""
+1. For people, return their country of origin or nationality.
+2. For cities, states, regions, countries, return the proper location.
+3. Return a JSON object like: {"has_location": true/false, "location_type": "Country|City|State|Region", "location_name": "name"}
+4. If no location, set has_location to false and leave others null.
+
+Examples:
+"Paris Olympics" → {"has_location": true, "location_type": "City", "location_name": "Paris"}
+"California fires" → {"has_location": true, "location_type": "State", "location_name": "California"}
+"Barack Obama" → {"has_location": true, "location_type": "Country", "location_name": "USA"}
+"AI technology" → {"has_location": false, "location_type": null, "location_name": null}
+"""
 
 
-def call_ollama_api(prompt, system_prompt, model="llama3.2:3b"):
+
+def call_ollama_api(prompt, system_prompt, model=MODEL_NAME, max_retries=2):
     """
-    Call Ollama API running on host machine
-    
-    Args:
-        prompt: User prompt
-        system_prompt: System instructions
-        model: Model name
-        
-    Returns:
-        Response text
+    Call Ollama API with retry logic
     """
-    try:
-        response = requests.post(
-            f"{OLLAMA_HOST}/api/chat",
-            json={
-                "model": model,
-                "messages": [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": prompt}
-                ],
-                "stream": False,
-                "options": {
-                    "temperature": 0.1,
-                    "num_predict": 50
-                }
-            },
-            timeout=30
-        )
-        
-        if response.status_code == 200:
-            return response.json()['message']['content'].strip()
-        else:
-            print(f"⚠️  Ollama API error: {response.status_code}")
-            return None
+    for attempt in range(max_retries):
+        try:
+            response = requests.post(
+                f"{OLLAMA_HOST}/api/chat",
+                json={
+                    "model": model,
+                    "messages": [
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": prompt}
+                    ],
+                    "stream": False,
+                    "options": {
+                        "temperature": 0.1,
+                        "num_predict": 20  # Shorter responses
+                    }
+                },
+                timeout=60  # Increased timeout
+            )
             
-    except Exception as e:
-        print(f"⚠️  Ollama connection error: {str(e)}")
-        return None
-
-
-def classify_page_with_llm(page_title, model="llama3.2:3b"):
-    """
-    Classify a Wikipedia page using local LLM on host
+            if response.status_code == 200:
+                return response.json()['message']['content'].strip()
+            elif response.status_code == 500:
+                # Model not loaded, wait and retry
+                if attempt < max_retries - 1:
+                    print(f"⚠️  Model loading, retry {attempt + 1}/{max_retries}...")
+                    time.sleep(5)
+                    continue
+                else:
+                    print(f"❌ Ollama 500 error after {max_retries} retries")
+                    return None
+            else:
+                print(f"⚠️  Ollama API error: {response.status_code}")
+                return None
+                
+        except Exception as e:
+            print(f"⚠️  Ollama error: {str(e)}")
+            if attempt < max_retries - 1:
+                time.sleep(2)
+            else:
+                return None
     
-    Args:
-        page_title: Page title to classify
-        model: Ollama model to use
-        
-    Returns:
-        Category name
-    """
-    # Clean title
+    return None
+
+
+def classify_page_with_llm(page_title, model=MODEL_NAME):
+    """Classify a Wikipedia page using Ollama"""
     clean_title = page_title.replace("_", " ")
-    
-    # Call Ollama
     result = call_ollama_api(clean_title, CATEGORY_SYSTEM_PROMPT, model)
     
     if not result:
@@ -160,7 +133,7 @@ def classify_page_with_llm(page_title, model="llama3.2:3b"):
     if result in CATEGORIES:
         return result
     
-    # Try to match partial
+    # Fuzzy match
     for cat in CATEGORIES:
         if cat.lower() in result.lower():
             return cat
@@ -168,46 +141,30 @@ def classify_page_with_llm(page_title, model="llama3.2:3b"):
     return "Other"
 
 
-def extract_geography_with_llm(page_title, model="llama3.2:3b"):
-    """
-    Extract geographical information using local LLM on host
-    
-    Args:
-        page_title: Page title to analyze
-        model: Ollama model to use
-        
-    Returns:
-        Dictionary with location info or None
-    """
-    # Clean title
+def extract_geography_with_llm(page_title, model=MODEL_NAME):
+    """Extract geographical information using Ollama"""
     clean_title = page_title.replace("_", " ")
-    
-    # Call Ollama
     result = call_ollama_api(clean_title, GEOGRAPHY_SYSTEM_PROMPT, model)
     
     if not result:
         return None
     
     try:
-        # Extract JSON from response
         json_match = re.search(r'\{.*\}', result, re.DOTALL)
         if json_match:
             geo_data = json.loads(json_match.group())
-            
             if geo_data.get('has_location'):
                 return {
                     'location_type': geo_data.get('location_type'),
                     'location': geo_data.get('location_name')
                 }
-        
-        return None
-        
-    except Exception as e:
-        print(f"⚠️  Geography parsing error: {str(e)}")
-        return None
+    except:
+        pass
+    
+    return None
 
 
 def get_category_stats(categories_list):
-    """Get statistics about category distribution"""
+    """Get category distribution statistics"""
     from collections import Counter
     return dict(Counter(categories_list))
