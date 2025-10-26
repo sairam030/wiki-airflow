@@ -85,6 +85,10 @@ def categorize_pages(**context):
     df['category'] = categories
     df['location_type'] = [g['location_type'] if g else None for g in geography_data]
     df['location'] = [g['location'] if g else None for g in geography_data]
+    
+    # Replace NaN/None geography with "No specific location" for better visualization
+    df['location'] = df['location'].fillna('No specific location')
+    df['location_type'] = df['location_type'].fillna('General')
 
 
     
@@ -98,7 +102,8 @@ def categorize_pages(**context):
     
     print(f"\n🌍 Geography: {geo_count} pages with location")
     
-    # Save to Gold
+    # Save to temporary Gold location for clean_gold_layer to process
+    # Note: This is an intermediate file, clean_gold_layer will create final Gold output
     gold_filename = output_filename.replace("cleaned_", "categorized_")
     csv_buffer = df.to_csv(index=False)
     
@@ -109,7 +114,8 @@ def categorize_pages(**context):
         ContentType='text/csv'
     )
     
-    print(f"✅ Saved to Gold: {gold_filename}")
+    print(f"✅ Saved categorized data (intermediate): {gold_filename}")
+    print("   → Will be cleaned by clean_gold_layer before final Gold")
     
     return {
         'output_file': gold_filename,

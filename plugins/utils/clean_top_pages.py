@@ -136,7 +136,7 @@ def clean_pages(**context):
             col("views"),
             col("rank"),
             col("link")
-        ).orderBy(col("views").desc()).limit(100)
+        ).orderBy(col("views").desc())
         
         # Show sample
         print("📋 Sample of cleaned data:")

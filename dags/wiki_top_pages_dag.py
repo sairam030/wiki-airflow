@@ -13,13 +13,14 @@ from utils.load_postgres import load_gold_to_postgres
 from utils.fetch_top_pages import fetch_top_pages
 from utils.clean_top_pages import check_spark_cluster, clean_pages
 from utils.categorize_pages import check_ollama, categorize_pages
+from utils.clean_gold_layer import clean_gold_layer
 from config import BRONZE_BUCKET, SILVER_BUCKET, GOLD_BUCKET, create_s3_client
 
 
 def verify_pipeline(**context):
     """Verify pipeline completion"""
     ti = context['ti']
-    metadata = ti.xcom_pull(task_ids='categorize_pages')
+    metadata = ti.xcom_pull(task_ids='clean_gold_layer')
     
     s3_client = create_s3_client()
     
@@ -136,7 +137,17 @@ with DAG(
         """
     )
 
-    # task 6 load gold data to postgres 
+    # task 6 clean gold layer
+    clean_gold_layer = PythonOperator(
+        task_id='clean_gold_layer',
+        python_callable=clean_gold_layer,
+        doc_md="""
+        ### Clean Gold Layer
+        - Final cleaning of Gold layer data using Spark cluster
+        """
+    )
+
+    # task 7 load gold data to postgres 
     load_gold_task = PythonOperator(
     task_id='load_gold_to_postgres',
     python_callable=load_gold_to_postgres,
@@ -150,7 +161,6 @@ with DAG(
 
 
 
-    fetch >>  clean >> categorize >> verify
+    fetch >>  clean >> categorize >> clean_gold_layer >> load_gold_task >> verify
     check_spark >> clean
     check_llm >> categorize
-    load_gold_task << categorize
