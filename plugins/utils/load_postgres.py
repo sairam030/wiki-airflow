@@ -50,6 +50,7 @@ def load_gold_to_postgres(**context):
         views INT,
         rank INT,
         category TEXT,
+        geography_type TEXT,
         geography TEXT
     );
     """
@@ -59,8 +60,8 @@ def load_gold_to_postgres(**context):
     # 5. Insert data
     for _, row in df.iterrows():
         cursor.execute(
-            "INSERT INTO wiki_gold (page, views, rank, category, geography) VALUES (%s, %s, %s, %s, %s) ON CONFLICT DO NOTHING",
-            (row["page"], row["views"], row["rank"], row.get("category"), row.get("geography"))
+            "INSERT INTO wiki_gold (page, views, rank, category, geography_type, geography) VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT DO NOTHING",
+            (row["page"], row["views"], row["rank"], row.get("category"), row.get("location_type"), row.get("location"))
         )
     conn.commit()
     cursor.close()
