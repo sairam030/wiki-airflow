@@ -2,7 +2,7 @@ version: '3.8'
 
 x-airflow-common: &airflow-common
   build: .
-  image: custom-airflow-spark:2.9.0
+  image: sairam030/custom-airflow-spark:2.9.0
   environment: &airflow-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
