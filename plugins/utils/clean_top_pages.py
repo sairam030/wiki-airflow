@@ -71,7 +71,8 @@ def check_spark_cluster(**context):
 
 def clean_pages(**context):
     """
-    Read CSV from Bronze, clean with Spark CLUSTER, write to Silver
+    Read CSV from Bronze, merge with Wikipedia categories if available, 
+    clean with Spark CLUSTER, write to Silver
     """
     # Get filename from previous task
     ti = context['ti']
@@ -81,6 +82,11 @@ def clean_pages(**context):
         raise ValueError("No filename received from fetch_top_pages task")
     
     print(f"📊 Processing file: {filename}")
+    
+    # Calculate categories filename
+    from datetime import datetime, timedelta
+    yesterday = datetime.now() - timedelta(days=1)
+    categories_filename = f"wiki_categories_{yesterday.strftime('%Y_%m_%d')}.csv"
     
     # Ensure Silver bucket exists
     ensure_bucket_exists(SILVER_BUCKET)
@@ -114,17 +120,37 @@ def clean_pages(**context):
         
         # Read CSV from Bronze bucket
         input_path = f"s3a://{BRONZE_BUCKET}/{filename}"
-        print(f"📖 Reading CSV from: {input_path}")
+        print(f"📖 Reading pages from: {input_path}")
         
         df = spark.read.csv(input_path, header=True, inferSchema=True)
-        
         print(f"✓ Loaded {df.count()} records from Bronze bucket")
+        
+        # Try to read Wikipedia categories (may not exist yet if parallel DAG is still running)
+        categories_path = f"s3a://{BRONZE_BUCKET}/{categories_filename}"
+        print(f"📖 Checking for categories: {categories_path}")
+        
+        try:
+            categories_df = spark.read.csv(categories_path, header=True, inferSchema=True)
+            print(f"✓ Found categories file with {categories_df.count()} records")
+            
+            # Merge categories with main data
+            df = df.join(
+                categories_df.select("page", "wiki_categories"),
+                df.article == categories_df.page,
+                "left"
+            ).drop("page")  # Drop the duplicate page column from join
+            
+            print("✓ Merged Wikipedia categories")
+        except Exception as e:
+            print(f"⚠️  Categories file not found (parallel DAG may still be running): {str(e)}")
+            print("   → Proceeding without categories, they can be added later")
+            # Add empty wiki_categories column
+            df = df.withColumn("wiki_categories", lit(""))
         
         # Clean and transform data
         print("🧹 Cleaning data on Spark cluster...")
         
         # add a column called link with the full Wikipedia URL
-
         df = df.withColumn("link", concat(lit("https://en.wikipedia.org/wiki/"), col("article")))
 
         cleaned_df = df.filter(
@@ -135,7 +161,8 @@ def clean_pages(**context):
             col("article").alias("page"),
             col("views"),
             col("rank"),
-            col("link")
+            col("link"),
+            col("wiki_categories")  # Keep Wikipedia categories (empty if not available)
         ).orderBy(col("views").desc())
         
         # Show sample

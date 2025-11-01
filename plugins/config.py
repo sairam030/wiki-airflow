@@ -16,10 +16,20 @@ MINIO_SECRET_KEY = os.getenv("MINIO_SECRET_KEY", "minioadmin")
 BRONZE_BUCKET = "bronze"
 SILVER_BUCKET = "silver"
 GOLD_BUCKET = "gold"
+DIAMOND_BUCKET = "diamond"  
 
-# Ollama Configuration - NOW POINTS TO DOCKER CONTAINER
-OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://ollama:11434")  # ← CHANGED
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:1b")
+# ============================================================================
+# CLASSIFIER CONFIGURATION - Choose your classification method
+# ============================================================================
+# Options:
+#   "keyword" - Fast keyword-based (87.5% accuracy, ~2 min for 995 pages, no API)
+#   "ollama"  - Local GPU LLM (90%+ accuracy, requires Ollama running)
+# ============================================================================
+CLASSIFIER_METHOD = os.getenv("CLASSIFIER_METHOD", "keyword")  # DEFAULT: keyword (fast & reliable)
+
+# Ollama Configuration
+OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://ollama:11434")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:1.5b")  # Fast and accurate model
 
 
 def create_s3_client():

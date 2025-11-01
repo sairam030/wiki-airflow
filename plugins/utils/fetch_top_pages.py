@@ -18,6 +18,7 @@ from config import BRONZE_BUCKET, create_s3_client, ensure_bucket_exists
 def fetch_top_pages(**context):
     """
     Fetch Wikipedia top pages from API and upload to MinIO Bronze bucket as CSV
+    (No categories - that's done in parallel by separate DAG)
     """
     # Calculate yesterday's date
     yesterday = datetime.now() - timedelta(days=1)
@@ -34,7 +35,7 @@ def fetch_top_pages(**context):
     
     if response.status_code != 200:
         raise Exception(f"API request failed with status code {response.status_code}")
-    
+
     data = response.json()
     print(f"✓ Fetched {len(data.get('items', []))} items from API")
     
@@ -62,6 +63,8 @@ def fetch_top_pages(**context):
     )
     
     print(f"✅ Uploaded to MinIO: s3://{BRONZE_BUCKET}/{filename}")
+    print(f"   • Records: {len(df)}")
+    print(f"   • Columns: {list(df.columns)}")
     
     # Return filename for next task
     return filename
