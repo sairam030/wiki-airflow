@@ -101,10 +101,20 @@ def fetch_wikipedia_categories_for_pages(**context):
     Read pages from Bronze bucket and fetch Wikipedia categories in PARALLEL
     with retry logic to ensure NO DATA LOSS
     """
-    # Calculate yesterday's date
-    yesterday = datetime.now() - timedelta(days=1)
-    filename = f"top_pages_{yesterday.strftime('%Y_%m_%d')}.csv"
-    categories_filename = f"wiki_categories_{yesterday.strftime('%Y_%m_%d')}.csv"
+    # Get filename from previous task via XCom
+    ti = context['ti']
+    filename = ti.xcom_pull(task_ids='fetch_top_pages')
+    
+    if not filename:
+        # Fallback to yesterday's date if XCom is empty (shouldn't happen)
+        yesterday = datetime.now() - timedelta(days=1)
+        filename = f"top_pages_{yesterday.strftime('%Y_%m_%d')}.csv"
+        print(f"⚠️ No XCom data found, using fallback filename: {filename}")
+    
+    # Extract date from filename for output file
+    # filename format: top_pages_YYYY_MM_DD.csv
+    date_part = filename.replace('top_pages_', '').replace('.csv', '')
+    categories_filename = f"wiki_categories_{date_part}.csv"
     
     print(f"📥 Fetching Wikipedia categories for: {filename}")
     

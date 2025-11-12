@@ -82,9 +82,29 @@ def categorize_pages(**context):
     if not csv_files:
         raise ValueError(f"No CSV in {SILVER_BUCKET}/{output_filename}")
     
-    # Read data
-    obj = s3_client.get_object(Bucket=SILVER_BUCKET, Key=csv_files[0])
-    df = pd.read_csv(obj['Body'])
+    # Read data with error handling for malformed CSV
+    csv_file_key = csv_files[0]
+    
+    try:
+        # Try reading with standard settings first
+        obj = s3_client.get_object(Bucket=SILVER_BUCKET, Key=csv_file_key)
+        df = pd.read_csv(obj['Body'])
+    except pd.errors.ParserError as e:
+        print(f"⚠️ CSV parsing error: {e}")
+        print("🔄 Retrying with error handling enabled...")
+        
+        # Fetch fresh object (can't reuse exhausted stream)
+        obj = s3_client.get_object(Bucket=SILVER_BUCKET, Key=csv_file_key)
+        
+        # Read with error handling - use quoted fields properly
+        df = pd.read_csv(
+            obj['Body'],
+            quoting=1,            # QUOTE_ALL - expect all fields quoted
+            escapechar='\\',      # Handle escaped characters
+            doublequote=True,     # Double quotes to escape quotes
+            engine='python'       # Use Python parser (more flexible)
+        )
+        print(f"✓ Successfully parsed CSV with quote handling")
     
     print(f"✓ Loaded {len(df)} pages from Silver")
     print(f"   Columns: {list(df.columns)}")
@@ -115,76 +135,61 @@ def categorize_pages(**context):
     
     # Determine worker count based on classifier method
     if CLASSIFIER_METHOD == "keyword":
-        print(f"\n⚡ Starting KEYWORD classification (instant, no API calls)...")
+        print(f"\n⚡ Starting KEYWORD classification (sequential processing)...")
         print(f"   Method: Pattern matching on Wikipedia categories")
-        print(f"   Workers: 10 concurrent (CPU-bound, very fast)")
+        print(f"   Processing: Sequential (1 page at a time)")
         print(f"   Expected time: ~5-10 seconds for 995 pages")
-        workers = 10
+        workers = 1  # Sequential
     else:  # ollama
-        print(f"\n🤖 Starting OLLAMA LLM classification...")
-        print(f"   Model: Qwen2.5:1.5b (GPU-accelerated)")
-        print(f"   Workers: 2 concurrent (RTX 2060 optimized)")
-        workers = 2
+        print(f"\n🤖 Starting OLLAMA LLM classification (sequential processing)...")
+        print(f"   Model: Qwen2.5:1.5b")
+        print(f"   Processing: Sequential (1 page at a time for stability)")
+        workers = 1  # Sequential
     
     print(f"   Progress will be shown every 10 pages\n")
     
     start_time = time.time()
-    results = {}
+    results = []
     completed_count = 0
     
-    # Use ThreadPoolExecutor for parallel LLM calls
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        # Submit all tasks
-        future_to_idx = {}
-        for idx, row in df.iterrows():
-            page = row['page']
-            page_cats = wiki_categories_dict.get(page, [])
-            future = executor.submit(process_single_page, page, page_cats)
-            future_to_idx[future] = idx
+    # Sequential processing (no parallel execution to avoid issues)
+    print("🔄 Processing pages sequentially...")
+    for idx, row in df.iterrows():
+        page = row['page']
+        page_cats = wiki_categories_dict.get(page, [])
         
-        # Process results as they complete
-        for future in as_completed(future_to_idx):
-            idx = future_to_idx[future]
-            try:
-                result = future.result()
-                results[idx] = result
-                completed_count += 1
+        try:
+            result = process_single_page(page, page_cats)
+            results.append(result)
+            completed_count += 1
+            
+            # Progress updates every 10 pages
+            if completed_count % 10 == 0 or completed_count == len(df):
+                elapsed = time.time() - start_time
+                avg_time = elapsed / completed_count if completed_count > 0 else 0
+                remaining = (len(df) - completed_count) * avg_time
+                progress_pct = (completed_count / len(df)) * 100
                 
-                # Progress updates every 10 pages
-                if completed_count % 10 == 0 or completed_count == len(df):
-                    elapsed = time.time() - start_time
-                    avg_time = elapsed / completed_count
-                    remaining = (len(df) - completed_count) * avg_time
-                    progress_pct = (completed_count / len(df)) * 100
-                    
-                    print(f"✓ {completed_count}/{len(df)} ({progress_pct:.1f}%) | "
-                          f"Elapsed: {elapsed:.1f}s | Avg: {avg_time:.2f}s/page | "
-                          f"ETA: {remaining:.1f}s (~{remaining/60:.1f} min)")
-                    
-                    # Show last classified page
-                    print(f"  └─ Last: {result['page'][:40]:40} → {result['category']}")
-                    
-            except Exception as e:
-                print(f"⚠️  Error processing page at index {idx}: {str(e)}")
-                # Add fallback result
-                results[idx] = {
-                    'page': df.iloc[idx]['page'],
-                    'category': 'Other',
-                    'geography': None
-                }
-                completed_count += 1
+                print(f"✓ {completed_count}/{len(df)} ({progress_pct:.1f}%) | "
+                      f"Elapsed: {elapsed:.1f}s | Avg: {avg_time:.2f}s/page | "
+                      f"ETA: {remaining:.1f}s (~{remaining/60:.1f} min)")
+                
+                # Show last classified page
+                print(f"  └─ Last: {result['page'][:40]:40} → {result['category']}")
+                
+        except Exception as e:
+            print(f"⚠️  Error processing page '{page}': {str(e)}")
+            # Add fallback result
+            results.append({
+                'page': page,
+                'category': 'Other',
+                'geography': None
+            })
+            completed_count += 1
     
-    # Sort results by original index and extract data
-    categories = []
-    geography_data = []
-    for idx in range(len(df)):
-        if idx in results:
-            categories.append(results[idx]['category'])
-            geography_data.append(results[idx]['geography'])
-        else:
-            # Fallback for any missing results
-            categories.append('Other')
-            geography_data.append(None)
+    # Extract data from results (in order)
+    categories = [r['category'] for r in results]
+    geography_data = [r['geography'] for r in results]
     
     total_time = time.time() - start_time
     print(f"\n⏱️  Total classification time: {total_time:.1f}s ({total_time/60:.1f} minutes)")
@@ -218,7 +223,14 @@ def categorize_pages(**context):
     # Save to temporary Gold location for clean_gold_layer to process
     # Note: This is an intermediate file, clean_gold_layer will create final Gold output
     gold_filename = output_filename.replace("cleaned_", "categorized_")
-    csv_buffer = df.to_csv(index=False)
+    
+    # Write CSV with proper quoting to handle commas in data
+    csv_buffer = df.to_csv(
+        index=False,
+        quoting=1,          # QUOTE_ALL - quote all fields
+        escapechar='\\',    # Escape character for quotes within quotes
+        doublequote=True    # Double quotes to escape quotes
+    )
     
     s3_client.put_object(
         Bucket=GOLD_BUCKET,

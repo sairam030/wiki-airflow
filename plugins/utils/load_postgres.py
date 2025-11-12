@@ -116,3 +116,10 @@ def load_gold_to_postgres(**context):
     cursor.close()
     conn.close()
     print(f"✅ Successfully loaded data into Postgres table 'wiki_diamond' (final curated data)")
+    
+    # Return metadata for show_metrics task
+    return {
+        'records_loaded': len(df),
+        'table_name': 'wiki_diamond',
+        'status': 'success'
+    }

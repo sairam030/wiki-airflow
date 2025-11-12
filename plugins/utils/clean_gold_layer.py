@@ -79,7 +79,15 @@ def clean_gold_layer(**context):
         input_path = f"s3a://{GOLD_BUCKET}/{output_filename}"
         print(f"📖 Reading categorized data from: {input_path}")
         
-        df = spark.read.csv(input_path, header=True, inferSchema=True)
+        # Read CSV with proper quote handling
+        df = spark.read.csv(
+            input_path, 
+            header=True, 
+            inferSchema=True,
+            quote='"',           # Handle quoted fields
+            escape='"',          # Handle escaped quotes
+            multiLine=True       # Handle multi-line fields
+        )
         initial_count = df.count()
         print(f"✓ Loaded {initial_count} records")
         
@@ -102,6 +110,8 @@ def clean_gold_layer(**context):
         
         # 3. Clean page names (remove underscores for better readability)
         df = df.withColumn('page_display', regexp_replace(col('page'), '_', ' '))
+
+        # 3.1 remove page name 
         
         # 4. Validate views and rank (must be positive)
         df = df.filter((col('views') > 0) & (col('rank') > 0))
@@ -208,7 +218,7 @@ def clean_gold_layer(**context):
             print(f"   📍 Using Nominatim (OpenStreetMap) geocoding API")
             
             # Import geocoding function
-            from geocode import batch_geocode_locations
+            from utils.geocode import batch_geocode_locations
             
             # Batch geocode
             geocoded_results = batch_geocode_locations(need_geocoding_list)
@@ -274,12 +284,22 @@ def clean_gold_layer(**context):
         print(f"✅ Successfully wrote {final_count} records to Diamond bucket")
         print(f"💎 Diamond bucket contains the final curated data!")
         
+        # Count pages with coordinates for metrics
+        pages_with_coordinates = final_df.filter(
+            (col('latitude').isNotNull()) & 
+            (col('longitude').isNotNull())
+        ).count()
+        
+        print(f"📍 Geocoding summary:")
+        print(f"   • Pages with coordinates: {pages_with_coordinates} ({pages_with_coordinates/final_count*100:.1f}%)")
+        
         # Return metadata for next task (compatible with verify_pipeline)
         return {
             'output_file': final_output_filename,
             'total_pages': final_count,
             'records_removed': removed_count,
-            'pages_with_location': pages_with_location
+            'pages_with_location': pages_with_location,
+            'pages_with_coordinates': pages_with_coordinates
         }
         
     finally:

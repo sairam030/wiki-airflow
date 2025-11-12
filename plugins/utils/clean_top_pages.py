@@ -83,10 +83,10 @@ def clean_pages(**context):
     
     print(f"📊 Processing file: {filename}")
     
-    # Calculate categories filename
-    from datetime import datetime, timedelta
-    yesterday = datetime.now() - timedelta(days=1)
-    categories_filename = f"wiki_categories_{yesterday.strftime('%Y_%m_%d')}.csv"
+    # Extract date from filename to construct categories filename
+    # filename format: top_pages_YYYY_MM_DD.csv
+    date_part = filename.replace('top_pages_', '').replace('.csv', '')
+    categories_filename = f"wiki_categories_{date_part}.csv"
     
     # Ensure Silver bucket exists
     ensure_bucket_exists(SILVER_BUCKET)
@@ -178,9 +178,12 @@ def clean_pages(**context):
         
         print(f"💾 Writing CSV to: {output_path}")
         
-        # Write as single CSV file
+        # Write as single CSV file with proper escaping/quoting
         cleaned_df.coalesce(1).write.mode("overwrite") \
             .option("header", "true") \
+            .option("quote", '"') \
+            .option("escape", '"') \
+            .option("quoteAll", "true") \
             .csv(output_path)
         
         print(f"✅ Successfully wrote cleaned data to Silver bucket")
