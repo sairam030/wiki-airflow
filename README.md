@@ -771,7 +771,6 @@ For full documentation, see: **[`docs/METRICS_SYSTEM.md`](docs/METRICS_SYSTEM.md
 ### DAG Diagram
 
 ![DAG Visualization](screenshots/pipeline.png)
-*Add your DAG screenshot here from Airflow UI*
 
 ---
 
