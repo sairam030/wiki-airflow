@@ -39931,3 +39931,1747 @@ File Path                                         PID    Runtime      # DAGs    
 /opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.47s           2025-11-12T16:59:05
 /opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.17s           2025-11-12T16:59:15
 ================================================================================
+[2025-11-12T17:00:00.913+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.36s           2025-11-12T16:59:46
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-12T16:59:35
+================================================================================
+[2025-11-12T17:00:29.438+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-11-12T17:02:19.356+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-11-12T17:02:19.358+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-11-12T17:02:19.358+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-11-12T17:02:19.360+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-12T17:02:19.375+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-12T17:02:19.740+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/wiki_top_pages_dag.py             183  0.12s             0           0
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py    180  0.14s             0           0
+================================================================================
+[2025-11-12T17:02:49.752+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  1.00s           2025-11-12T17:02:20
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.99s           2025-11-12T17:02:20
+================================================================================
+[2025-11-12T17:03:20.268+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.34s           2025-11-12T17:02:51
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.34s           2025-11-12T17:02:51
+================================================================================
+[2025-11-12T17:03:50.539+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-12T17:03:21
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-12T17:03:21
+================================================================================
+[2025-11-12T17:04:20.859+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.61s           2025-11-12T17:03:52
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.58s           2025-11-12T17:03:52
+================================================================================
+[2025-11-12T17:04:51.296+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  1.70s           2025-11-12T17:04:24
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  1.67s           2025-11-12T17:04:24
+================================================================================
+[2025-11-12T17:05:21.624+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-12T17:04:54
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-12T17:04:54
+================================================================================
+[2025-11-12T17:05:52.525+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.76s           2025-11-12T17:05:25
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.73s           2025-11-12T17:05:25
+================================================================================
+[2025-11-12T17:06:23.176+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-12T17:05:56
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-12T17:05:56
+================================================================================
+[2025-11-12T17:06:53.620+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.23s           2025-11-12T17:06:26
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-12T17:06:26
+================================================================================
+[2025-11-12T17:07:19.816+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-12T17:07:19.823+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-12T17:07:23.865+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.31s           2025-11-12T17:06:56
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.28s           2025-11-12T17:06:56
+================================================================================
+[2025-11-12T17:07:54.452+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-12T17:07:27
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-12T17:07:27
+================================================================================
+[2025-11-12T17:08:24.856+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-12T17:07:57
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.22s           2025-11-12T17:07:57
+================================================================================
+[2025-11-12T17:08:55.189+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-12T17:08:28
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-12T17:08:28
+================================================================================
+[2025-11-12T17:09:25.394+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.69s           2025-11-12T17:08:58
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.66s           2025-11-12T17:08:58
+================================================================================
+[2025-11-12T17:09:55.434+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-12T17:09:29
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.22s           2025-11-12T17:09:29
+================================================================================
+[2025-11-12T17:10:25.846+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.24s           2025-11-12T17:09:59
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-12T17:09:59
+================================================================================
+[2025-11-12T17:10:56.239+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-12T17:10:30
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-12T17:10:30
+================================================================================
+[2025-11-12T17:11:26.467+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.80s           2025-11-12T17:11:01
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.76s           2025-11-12T17:11:01
+================================================================================
+[2025-11-12T17:11:56.593+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-12T17:11:31
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.19s           2025-11-12T17:11:31
+================================================================================
+[2025-11-12T17:12:19.912+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-12T17:12:19.917+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-12T17:12:26.984+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.22s           2025-11-12T17:12:01
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-12T17:12:01
+================================================================================
+[2025-11-12T17:12:30.994+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-11-12T17:37:26.347+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-11-12T17:37:26.348+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-11-12T17:37:26.348+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-11-12T17:37:26.349+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-12T17:37:26.353+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-12T17:37:26.572+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/wiki_top_pages_dag.py             183  0.07s             0           0
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py    180  0.09s             0           0
+================================================================================
+[2025-11-12T17:37:56.703+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.78s           2025-11-12T17:37:27
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.77s           2025-11-12T17:37:27
+================================================================================
+[2025-11-12T17:38:26.739+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-12T17:37:57
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.17s           2025-11-12T17:37:57
+================================================================================
+[2025-11-12T17:38:57.109+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-12T17:38:27
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-12T17:38:27
+================================================================================
+[2025-11-12T17:39:27.481+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-12T17:38:58
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.19s           2025-11-12T17:38:58
+================================================================================
+[2025-11-12T17:39:57.951+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  2.31s           2025-11-12T17:39:30
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  2.28s           2025-11-12T17:39:30
+================================================================================
+[2025-11-12T17:40:04.342+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-11-13T08:00:10.060+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-11-13T08:00:10.064+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-11-13T08:00:10.065+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-11-13T08:00:10.066+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:00:10.070+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:00:10.389+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/wiki_top_pages_dag.py             183  0.08s             0           0
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py    180  0.10s             0           0
+================================================================================
+[2025-11-13T08:00:40.432+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.89s           2025-11-13T08:00:11
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.86s           2025-11-13T08:00:11
+================================================================================
+[2025-11-13T08:01:10.752+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:00:41
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:00:41
+================================================================================
+[2025-11-13T08:01:40.971+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  1.00s           2025-11-13T08:01:12
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.98s           2025-11-13T08:01:12
+================================================================================
+[2025-11-13T08:02:11.178+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.30s           2025-11-13T08:01:43
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.27s           2025-11-13T08:01:43
+================================================================================
+[2025-11-13T08:02:41.609+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  1.42s           2025-11-13T08:02:14
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  1.40s           2025-11-13T08:02:14
+================================================================================
+[2025-11-13T08:03:12.387+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.26s           2025-11-13T08:02:45
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.25s           2025-11-13T08:02:45
+================================================================================
+[2025-11-13T08:03:43.128+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.59s           2025-11-13T08:03:15
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.57s           2025-11-13T08:03:15
+================================================================================
+[2025-11-13T08:04:13.332+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.33s           2025-11-13T08:03:47
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.32s           2025-11-13T08:03:47
+================================================================================
+[2025-11-13T08:04:43.687+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:04:17
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:04:17
+================================================================================
+[2025-11-13T08:05:11.031+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:05:11.039+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:05:14.074+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:04:47
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:04:47
+================================================================================
+[2025-11-13T08:05:44.293+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:05:18
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:05:18
+================================================================================
+[2025-11-13T08:06:14.656+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:05:48
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:05:48
+================================================================================
+[2025-11-13T08:06:45.028+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:06:18
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:06:18
+================================================================================
+[2025-11-13T08:07:15.396+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:06:49
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:06:49
+================================================================================
+[2025-11-13T08:07:45.763+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:07:19
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:07:19
+================================================================================
+[2025-11-13T08:08:16.098+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:07:49
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:07:49
+================================================================================
+[2025-11-13T08:08:46.450+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:08:20
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:08:20
+================================================================================
+[2025-11-13T08:09:16.821+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:08:50
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-13T08:08:50
+================================================================================
+[2025-11-13T08:09:47.430+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.43s           2025-11-13T08:09:21
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.40s           2025-11-13T08:09:21
+================================================================================
+[2025-11-13T08:10:11.634+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:10:11.642+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:10:17.707+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.42s           2025-11-13T08:09:51
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.40s           2025-11-13T08:09:51
+================================================================================
+[2025-11-13T08:10:48.189+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.45s           2025-11-13T08:10:22
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.43s           2025-11-13T08:10:22
+================================================================================
+[2025-11-13T08:11:18.965+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-13T08:10:52
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-13T08:10:52
+================================================================================
+[2025-11-13T08:11:49.315+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:11:23
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:11:23
+================================================================================
+[2025-11-13T08:12:19.968+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.43s           2025-11-13T08:11:53
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.43s           2025-11-13T08:11:53
+================================================================================
+[2025-11-13T08:12:50.192+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-13T08:12:24
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-13T08:12:24
+================================================================================
+[2025-11-13T08:13:20.714+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:12:54
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:12:54
+================================================================================
+[2025-11-13T08:13:51.066+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:13:24
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-13T08:13:24
+================================================================================
+[2025-11-13T08:14:21.391+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:13:55
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.17s           2025-11-13T08:13:55
+================================================================================
+[2025-11-13T08:14:51.729+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:14:25
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:14:25
+================================================================================
+[2025-11-13T08:15:12.032+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:15:12.039+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:15:22.103+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:14:55
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:14:55
+================================================================================
+[2025-11-13T08:15:52.444+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:15:26
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:15:26
+================================================================================
+[2025-11-13T08:16:22.790+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:15:56
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:15:56
+================================================================================
+[2025-11-13T08:16:52.991+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.33s           2025-11-13T08:16:27
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.31s           2025-11-13T08:16:27
+================================================================================
+[2025-11-13T08:17:23.655+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-13T08:16:57
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:16:57
+================================================================================
+[2025-11-13T08:17:54.015+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:17:27
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:17:27
+================================================================================
+[2025-11-13T08:18:24.395+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:17:58
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.19s           2025-11-13T08:17:58
+================================================================================
+[2025-11-13T08:18:54.753+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:18:28
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:18:28
+================================================================================
+[2025-11-13T08:19:25.148+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-13T08:18:59
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-13T08:18:59
+================================================================================
+[2025-11-13T08:19:55.502+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:19:29
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:19:29
+================================================================================
+[2025-11-13T08:20:12.850+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:20:12.859+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:20:25.925+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:19:59
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.19s           2025-11-13T08:19:59
+================================================================================
+[2025-11-13T08:20:56.263+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:20:30
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-13T08:20:30
+================================================================================
+[2025-11-13T08:21:26.611+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:21:00
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:21:00
+================================================================================
+[2025-11-13T08:21:56.965+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:21:30
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:21:30
+================================================================================
+[2025-11-13T08:22:27.317+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:22:01
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:22:01
+================================================================================
+[2025-11-13T08:22:57.676+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:22:31
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-13T08:22:31
+================================================================================
+[2025-11-13T08:23:28.015+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:23:01
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:23:01
+================================================================================
+[2025-11-13T08:23:58.338+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:23:32
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.16s           2025-11-13T08:23:32
+================================================================================
+[2025-11-13T08:24:28.710+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.22s           2025-11-13T08:24:02
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-13T08:24:02
+================================================================================
+[2025-11-13T08:24:59.054+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:24:32
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:24:32
+================================================================================
+[2025-11-13T08:25:13.182+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:25:13.185+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:25:29.273+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:25:03
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.16s           2025-11-13T08:25:03
+================================================================================
+[2025-11-13T08:25:59.614+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:25:33
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.16s           2025-11-13T08:25:33
+================================================================================
+[2025-11-13T08:26:29.945+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.17s           2025-11-13T08:26:03
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.15s           2025-11-13T08:26:03
+================================================================================
+[2025-11-13T08:27:00.308+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-13T08:26:34
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:26:34
+================================================================================
+[2025-11-13T08:27:30.650+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:27:04
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:27:04
+================================================================================
+[2025-11-13T08:28:01.019+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:27:34
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.19s           2025-11-13T08:27:34
+================================================================================
+[2025-11-13T08:28:31.409+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.27s           2025-11-13T08:28:05
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-13T08:28:05
+================================================================================
+[2025-11-13T08:29:01.726+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:28:35
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.17s           2025-11-13T08:28:35
+================================================================================
+[2025-11-13T08:29:32.062+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.17s           2025-11-13T08:29:05
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:29:05
+================================================================================
+[2025-11-13T08:30:02.484+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.25s           2025-11-13T08:29:36
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.24s           2025-11-13T08:29:36
+================================================================================
+[2025-11-13T08:30:13.732+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:30:13.737+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:30:32.862+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.16s           2025-11-13T08:30:06
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.16s           2025-11-13T08:30:06
+================================================================================
+[2025-11-13T08:31:03.208+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:30:37
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:30:37
+================================================================================
+[2025-11-13T08:31:33.566+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:31:07
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.19s           2025-11-13T08:31:07
+================================================================================
+[2025-11-13T08:32:03.933+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:31:37
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-13T08:31:37
+================================================================================
+[2025-11-13T08:32:34.271+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:32:08
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:32:08
+================================================================================
+[2025-11-13T08:33:04.626+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:32:38
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:32:38
+================================================================================
+[2025-11-13T08:33:34.969+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:33:08
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.15s           2025-11-13T08:33:08
+================================================================================
+[2025-11-13T08:34:05.183+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-13T08:33:39
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-13T08:33:39
+================================================================================
+[2025-11-13T08:34:35.695+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:34:09
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.16s           2025-11-13T08:34:09
+================================================================================
+[2025-11-13T08:35:06.040+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:34:39
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:34:39
+================================================================================
+[2025-11-13T08:35:14.266+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:35:14.271+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:35:36.387+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:35:10
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:35:10
+================================================================================
+[2025-11-13T08:36:06.738+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-13T08:35:40
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.19s           2025-11-13T08:35:40
+================================================================================
+[2025-11-13T08:36:37.085+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:36:10
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:36:10
+================================================================================
+[2025-11-13T08:37:07.461+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-13T08:36:41
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-13T08:36:41
+================================================================================
+[2025-11-13T08:37:37.844+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-13T08:37:11
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-13T08:37:11
+================================================================================
+[2025-11-13T08:38:08.179+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:37:42
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.16s           2025-11-13T08:37:42
+================================================================================
+[2025-11-13T08:38:38.527+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:38:12
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:38:12
+================================================================================
+[2025-11-13T08:39:08.733+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:38:42
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.16s           2025-11-13T08:38:42
+================================================================================
+[2025-11-13T08:39:39.059+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.17s           2025-11-13T08:39:12
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:39:12
+================================================================================
+[2025-11-13T08:40:09.399+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-13T08:39:43
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-13T08:39:43
+================================================================================
+[2025-11-13T08:40:14.674+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:40:14.680+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:40:39.825+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-13T08:40:13
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.23s           2025-11-13T08:40:13
+================================================================================
+[2025-11-13T08:41:10.050+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:40:44
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.16s           2025-11-13T08:40:44
+================================================================================
+[2025-11-13T08:43:41.185+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.28s           2025-11-13T08:43:17
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.25s           2025-11-13T08:43:17
+================================================================================
+[2025-11-13T08:44:11.749+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-13T08:43:47
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-13T08:43:47
+================================================================================
+[2025-11-13T08:44:42.171+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.26s           2025-11-13T08:44:18
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.26s           2025-11-13T08:44:18
+================================================================================
+[2025-11-13T08:45:12.388+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.25s           2025-11-13T08:44:48
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.22s           2025-11-13T08:44:48
+================================================================================
+[2025-11-13T08:45:15.403+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:45:15.408+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:45:42.962+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.23s           2025-11-13T08:45:18
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-13T08:45:18
+================================================================================
+[2025-11-13T08:46:13.170+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-13T08:45:49
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-13T08:45:49
+================================================================================
+[2025-11-13T08:46:43.553+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-13T08:46:19
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.22s           2025-11-13T08:46:19
+================================================================================
+[2025-11-13T08:47:13.965+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.25s           2025-11-13T08:46:50
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-13T08:46:50
+================================================================================
+[2025-11-13T08:47:44.838+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  1.52s           2025-11-13T08:47:21
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  1.49s           2025-11-13T08:47:21
+================================================================================
+[2025-11-13T08:48:15.356+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.33s           2025-11-13T08:47:52
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.32s           2025-11-13T08:47:52
+================================================================================
+[2025-11-13T08:48:46.126+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.59s           2025-11-13T08:48:23
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.56s           2025-11-13T08:48:23
+================================================================================
+[2025-11-13T08:49:16.778+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-13T08:48:53
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.22s           2025-11-13T08:48:53
+================================================================================
+[2025-11-13T08:49:47.230+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.28s           2025-11-13T08:49:24
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.27s           2025-11-13T08:49:24
+================================================================================
+[2025-11-13T08:50:15.616+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:50:15.621+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:50:17.645+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-13T08:49:54
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.23s           2025-11-13T08:49:54
+================================================================================
+[2025-11-13T08:50:48.052+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-13T08:50:24
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-13T08:50:24
+================================================================================
+[2025-11-13T08:51:18.479+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.25s           2025-11-13T08:50:55
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.24s           2025-11-13T08:50:55
+================================================================================
+[2025-11-13T08:51:48.864+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-13T08:51:25
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-13T08:51:25
+================================================================================
+[2025-11-13T08:52:19.084+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-13T08:51:56
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.19s           2025-11-13T08:51:56
+================================================================================
+[2025-11-13T08:52:49.445+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-13T08:52:26
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-13T08:52:26
+================================================================================
+[2025-11-13T08:53:20.036+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-13T08:52:56
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-13T08:52:56
+================================================================================
+[2025-11-13T08:53:50.256+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.31s           2025-11-13T08:53:27
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.29s           2025-11-13T08:53:27
+================================================================================
+[2025-11-13T08:54:20.696+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.30s           2025-11-13T08:53:57
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.26s           2025-11-13T08:53:57
+================================================================================
+[2025-11-13T08:54:51.171+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.33s           2025-11-13T08:54:28
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.29s           2025-11-13T08:54:28
+================================================================================
+[2025-11-13T08:55:15.831+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-13T08:55:15.838+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-13T08:55:21.883+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.25s           2025-11-13T08:54:58
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.23s           2025-11-13T08:54:58
+================================================================================
+[2025-11-13T08:55:52.282+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-13T08:55:29
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.24s           2025-11-13T08:55:29
+================================================================================
+[2025-11-13T08:56:22.685+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-13T08:55:59
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-13T08:55:59
+================================================================================
+[2025-11-13T08:56:49.593+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-11-15T11:58:57.257+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-11-15T11:58:57.258+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-11-15T11:58:57.259+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-11-15T11:58:57.260+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-15T11:58:57.267+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-15T11:58:57.628+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/wiki_top_pages_dag.py             183  0.10s             0           0
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py    180  0.12s             0           0
+================================================================================
+[2025-11-15T11:59:27.795+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  1.10s           2025-11-15T11:58:58
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  1.06s           2025-11-15T11:58:58
+================================================================================
+[2025-11-15T11:59:58.120+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.45s           2025-11-15T11:59:29
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.40s           2025-11-15T11:59:29
+================================================================================
+[2025-11-15T12:00:28.599+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.24s           2025-11-15T11:59:59
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.22s           2025-11-15T11:59:59
+================================================================================
+[2025-11-15T12:00:59.162+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-15T12:00:30
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-15T12:00:30
+================================================================================
+[2025-11-15T12:01:29.399+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.69s           2025-11-15T12:01:00
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.67s           2025-11-15T12:01:00
+================================================================================
+[2025-11-15T12:01:59.935+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.75s           2025-11-15T12:01:31
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.73s           2025-11-15T12:01:31
+================================================================================
+[2025-11-15T12:02:30.458+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  1.33s           2025-11-15T12:02:03
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  1.29s           2025-11-15T12:02:03
+================================================================================
+[2025-11-15T12:03:00.640+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.24s           2025-11-15T12:02:34
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-15T12:02:34
+================================================================================
+[2025-11-15T12:03:31.014+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.24s           2025-11-15T12:03:04
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-15T12:03:04
+================================================================================
+[2025-11-15T12:03:57.364+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-15T12:03:57.375+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-15T12:04:01.443+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-15T12:03:35
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.19s           2025-11-15T12:03:35
+================================================================================
+[2025-11-15T12:04:31.637+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.30s           2025-11-15T12:04:05
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.29s           2025-11-15T12:04:05
+================================================================================
+[2025-11-15T12:05:02.256+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-15T12:04:36
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-15T12:04:36
+================================================================================
+[2025-11-15T12:05:32.605+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-15T12:05:06
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-15T12:05:06
+================================================================================
+[2025-11-15T12:06:02.968+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.19s           2025-11-15T12:05:36
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.17s           2025-11-15T12:05:36
+================================================================================
+[2025-11-15T12:06:33.295+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.17s           2025-11-15T12:06:07
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.16s           2025-11-15T12:06:07
+================================================================================
+[2025-11-15T12:07:03.680+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-15T12:06:37
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-15T12:06:37
+================================================================================
+[2025-11-15T12:07:34.009+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.18s           2025-11-15T12:07:07
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-15T12:07:07
+================================================================================
+[2025-11-15T12:08:04.212+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.27s           2025-11-15T12:07:38
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.26s           2025-11-15T12:07:38
+================================================================================
+[2025-11-15T12:08:34.625+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.38s           2025-11-15T12:08:08
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.35s           2025-11-15T12:08:08
+================================================================================
+[2025-11-15T12:08:57.770+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-15T12:08:57.824+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-15T12:09:05.106+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.66s           2025-11-15T12:08:39
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.65s           2025-11-15T12:08:39
+================================================================================
+[2025-11-15T12:09:35.573+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  1.11s           2025-11-15T12:09:11
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  1.06s           2025-11-15T12:09:11
+================================================================================
+[2025-11-15T12:10:05.916+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.37s           2025-11-15T12:09:42
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.35s           2025-11-15T12:09:42
+================================================================================
+[2025-11-15T12:10:36.462+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  1.20s           2025-11-15T12:10:13
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  1.16s           2025-11-15T12:10:13
+================================================================================
+[2025-11-15T12:11:06.816+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-15T12:10:43
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-15T12:10:43
+================================================================================
+[2025-11-15T12:11:37.248+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-15T12:11:14
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-15T12:11:14
+================================================================================
+[2025-11-15T12:12:07.568+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.66s           2025-11-15T12:11:44
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.63s           2025-11-15T12:11:44
+================================================================================
+[2025-11-15T12:12:37.869+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.58s           2025-11-15T12:12:15
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.56s           2025-11-15T12:12:15
+================================================================================
+[2025-11-15T12:13:08.272+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.23s           2025-11-15T12:12:46
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-15T12:12:46
+================================================================================
+[2025-11-15T12:13:38.677+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-15T12:13:16
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-15T12:13:16
+================================================================================
+[2025-11-15T12:13:58.022+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-15T12:13:58.029+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-15T12:14:09.117+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-15T12:13:46
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-15T12:13:46
+================================================================================
+[2025-11-15T12:14:39.576+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.31s           2025-11-15T12:14:17
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.30s           2025-11-15T12:14:17
+================================================================================
+[2025-11-15T12:15:10.297+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.55s           2025-11-15T12:14:48
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.53s           2025-11-15T12:14:48
+================================================================================
+[2025-11-15T12:15:40.505+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.34s           2025-11-15T12:15:18
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.31s           2025-11-15T12:15:18
+================================================================================
+[2025-11-15T12:16:10.610+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.62s           2025-11-15T12:15:49
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.59s           2025-11-15T12:15:49
+================================================================================
+[2025-11-15T12:16:40.799+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.27s           2025-11-15T12:16:19
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.25s           2025-11-15T12:16:19
+================================================================================
+[2025-11-15T12:17:11.448+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.25s           2025-11-15T12:16:50
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.24s           2025-11-15T12:16:50
+================================================================================
+[2025-11-15T12:17:41.840+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.23s           2025-11-15T12:17:20
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-15T12:17:20
+================================================================================
+[2025-11-15T12:18:12.221+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-15T12:17:51
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-15T12:17:51
+================================================================================
+[2025-11-15T12:18:42.605+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-15T12:18:21
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.20s           2025-11-15T12:18:21
+================================================================================
+[2025-11-15T12:18:58.906+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-15T12:18:58.911+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-15T12:19:13.008+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.20s           2025-11-15T12:18:51
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.18s           2025-11-15T12:18:51
+================================================================================
+[2025-11-15T12:19:43.452+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.29s           2025-11-15T12:19:22
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.28s           2025-11-15T12:19:22
+================================================================================
+[2025-11-15T12:20:13.660+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.30s           2025-11-15T12:19:52
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.28s           2025-11-15T12:19:52
+================================================================================
+[2025-11-15T12:20:44.303+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.25s           2025-11-15T12:20:23
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.24s           2025-11-15T12:20:23
+================================================================================
+[2025-11-15T12:21:14.698+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.21s           2025-11-15T12:20:53
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.19s           2025-11-15T12:20:53
+================================================================================
+[2025-11-15T12:21:44.922+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.39s           2025-11-15T12:21:24
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.36s           2025-11-15T12:21:24
+================================================================================
+[2025-11-15T12:22:14.958+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.53s           2025-11-15T12:21:54
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.51s           2025-11-15T12:21:54
+================================================================================
+[2025-11-15T12:22:45.588+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.64s           2025-11-15T12:22:25
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.61s           2025-11-15T12:22:25
+================================================================================
+[2025-11-15T12:23:16.148+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-15T12:22:56
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.21s           2025-11-15T12:22:56
+================================================================================
+[2025-11-15T12:23:46.551+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.22s           2025-11-15T12:23:26
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.22s           2025-11-15T12:23:26
+================================================================================
+[2025-11-15T12:23:59.377+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-11-15T12:23:59.384+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-15T12:24:16.746+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/wiki_smart_orchestrator_dag.py                           1           0  0.74s           2025-11-15T12:23:57
+/opt/airflow/dags/wiki_top_pages_dag.py                                    1           0  0.72s           2025-11-15T12:23:57
+================================================================================
+[2025-11-15T12:24:16.945+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15

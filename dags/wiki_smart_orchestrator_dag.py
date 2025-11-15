@@ -26,6 +26,7 @@ import time
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'plugins'))
 
 from utils.date_checker import find_missing_dates, get_dates_to_fetch, get_available_dates_in_diamond
+from utils.dag_metrics_collector import collect_dag_metrics
 from config import MINIO_ENDPOINT, MINIO_ACCESS_KEY, MINIO_SECRET_KEY, DIAMOND_BUCKET
 import pandas as pd
 import boto3
@@ -652,11 +653,22 @@ with DAG(
         python_callable=save_to_historical_bucket,
     )
 
+    # Task 6: Collect orchestrator metrics
+    collect_metrics = PythonOperator(
+        task_id='collect_dag_metrics',
+        python_callable=collect_dag_metrics,
+        op_kwargs={
+            'dag_id': 'wiki_smart_analytics_orchestrator',
+            'run_id': '{{ run_id }}'
+        },
+        trigger_rule=TriggerRule.ALL_DONE,  # Run even if some tasks failed
+    )
+
     # Define task dependencies
     # Branch path 1: completeness check -> load timeseries (if all data available)
     # Branch path 2: completeness check -> trigger fetches -> wait -> load timeseries (if missing data)
-    # Then: load timeseries -> find common articles -> save to historical bucket
+    # Then: load timeseries -> find common articles -> save to historical bucket -> collect metrics
     
     check_completeness >> [trigger_fetches, load_timeseries]
     trigger_fetches >> wait_sensor >> load_timeseries
-    load_timeseries >> find_common >> save_historical
+    load_timeseries >> find_common >> save_historical >> collect_metrics

@@ -16,6 +16,7 @@ from utils.clean_top_pages import check_spark_cluster, clean_pages
 from utils.categorize_pages import check_ollama, categorize_pages
 from utils.clean_gold_layer import clean_gold_layer
 from utils.show_metrics import show_pipeline_metrics
+from utils.dag_metrics_collector import collect_dag_metrics
 
 
 default_args = {
@@ -137,6 +138,23 @@ with DAG(
     """
     )
 
+    # task 8 collect DAG execution metrics
+    collect_metrics = PythonOperator(
+    task_id='collect_dag_metrics',
+    python_callable=collect_dag_metrics,
+    op_kwargs={
+        'dag_id': 'wiki_trending_pipeline',
+        'run_id': '{{ run_id }}'
+    },
+    trigger_rule='all_done',  # Run even if some tasks failed
+    doc_md="""
+    ### Collect DAG Metrics
+    - Captures execution metrics: latency, throughput, task durations
+    - Stores in PostgreSQL for historical comparison
+    - Enables performance tracking and trend analysis
+    """
+    )
+
 
 
     # Dependencies - CORRECTED WORKFLOW
@@ -159,4 +177,4 @@ with DAG(
     [fetch_categories, clean] >> categorize
     
     # Step 5: Rest of pipeline
-    categorize >> clean_gold_layer >> load_gold_task >> show_metrics
+    categorize >> clean_gold_layer >> load_gold_task >> show_metrics >> collect_metrics
