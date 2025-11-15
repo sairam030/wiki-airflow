@@ -7,7 +7,7 @@ import requests
 import json
 import re
 
-HF_API_KEY = "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"
+HF_API_KEY = "your_hf_api_token_here"  # Replace with your actual token
 
 
 # Test different models

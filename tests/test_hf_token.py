@@ -3,7 +3,7 @@ Test if Hugging Face API token is valid
 """
 import requests
 
-HF_API_KEY = "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"
+HF_API_KEY = "your_hf_api_token_here"  # Replace with your actual token
 
 # Test 1: Check if token is valid by hitting the whoami endpoint
 print("Testing HF API Token...")

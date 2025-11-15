@@ -7,7 +7,7 @@ According to: https://huggingface.co/docs/inference-providers
 import os
 import requests
 
-HF_TOKEN = os.environ.get("HF_TOKEN", "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")
+HF_TOKEN = os.environ.get("HF_TOKEN", "......")  # Replace with your token or set env variable
 
 print("="*80)
 print("Testing HuggingFace Inference Providers API")

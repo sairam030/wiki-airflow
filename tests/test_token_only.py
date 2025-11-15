@@ -2,7 +2,7 @@
 import requests
 
 # Your new token from the screenshot
-token = "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"
+token = "your_hf_api_token_here"  # Replace with your actual token
 
 print(f"Token length: {len(token)}")
 print(f"Token starts with: {token[:5]}")

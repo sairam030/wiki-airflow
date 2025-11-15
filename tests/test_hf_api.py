@@ -5,7 +5,7 @@ import requests
 import json
 import re
 
-HF_API_KEY = "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"
+HF_API_KEY = "your_huggingface_api_key_here"
 
 # Try different models - some may work better with Inference API
 MODELS_TO_TEST = [
